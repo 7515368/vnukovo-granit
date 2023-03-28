@@ -17,6 +17,7 @@
   margin-top: 0;
   @media (width < 680px) {
     padding-top: 180px;
+    margin-bottom: 60px;
   }
   &_slider {
     color: #fff;
@@ -68,6 +69,7 @@
       @media (width < 680px) {
         font-size: 27px;
         line-height: 40px;
+        max-width: 100%;
       }
     }
 
@@ -165,6 +167,7 @@
     @media (width < 680px) {
       width: 320px;
       flex-shrink: 0;
+      padding-bottom: 30px;
     }
     h4 {
       font-weight: 700;

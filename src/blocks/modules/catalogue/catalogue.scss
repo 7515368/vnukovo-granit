@@ -78,6 +78,12 @@
         text-align: center;
         margin-top: 32px;
       }
+      .description {
+        @media (width < 680px) {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
       .link_more {
         font-weight: 400;
         font-size: 14px;
