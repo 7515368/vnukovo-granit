@@ -20,7 +20,7 @@
         height: 43px;
       }
       use {
-        fill: #fff;
+        fill: $main-color;
       }
     }
   }
@@ -45,7 +45,7 @@
       width: 24px;
     }
     svg use {
-      fill: white;
+      fill: $main-color;
     }
     a:hover {
       svg use {
@@ -54,7 +54,7 @@
     }
   }
   &_phone {
-    color: #fff;
+    color: $main-color;
     font-weight: 300;
     font-size: 22px;
     line-height: 32px;
@@ -70,11 +70,11 @@
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color: $main-color;
     max-width: 1180px;
     margin: 35px auto;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-top: 1px solid $main-color;
+    border-bottom: 1px solid $main-color;
     &-menu {
       display: flex;
       list-style: none;
@@ -84,7 +84,7 @@
     }
     &-link a {
       text-decoration: none;
-      color: #fff;
+      color: $main-color;
       &:hover {
         color: $light-blue;
       }

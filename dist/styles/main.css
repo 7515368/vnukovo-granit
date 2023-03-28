@@ -768,6 +768,7 @@ img {
 }
 
 .btn {
+  text-align: center;
   border: 1px solid #1e9fbb;
   border-radius: 21px;
   font-weight: 400;
@@ -776,7 +777,7 @@ img {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: #252734;
   padding-top: 9px;
   padding-bottom: 10px;
   min-width: 295px;
@@ -823,6 +824,10 @@ section {
   background: #1e9fbb;
 }
 
+.wrap {
+  padding-bottom: 118px;
+}
+
 .header_container {
   display: flex;
   align-items: center;
@@ -838,7 +843,7 @@ section {
 }
 
 .header_logo svg use {
-  fill: #fff;
+  fill: #252734;
 }
 
 .header_contacts {
@@ -858,7 +863,7 @@ section {
 }
 
 .header_social svg use {
-  fill: white;
+  fill: #252734;
 }
 
 .header_social a:hover svg use {
@@ -866,7 +871,7 @@ section {
 }
 
 .header_phone {
-  color: #fff;
+  color: #252734;
   font-weight: 300;
   font-size: 22px;
   line-height: 32px;
@@ -878,11 +883,11 @@ section {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: #252734;
   max-width: 1180px;
   margin: 35px auto;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid #252734;
+  border-bottom: 1px solid #252734;
 }
 
 .header_nav-menu {
@@ -895,7 +900,7 @@ section {
 
 .header_nav-link a {
   text-decoration: none;
-  color: #fff;
+  color: #252734;
 }
 
 .header_nav-link a:hover {
@@ -1070,12 +1075,16 @@ section {
   flex-shrink: 0;
 }
 
+.footer_logo svg {
+  max-width: 100%;
+}
+
 .footer_logo svg use {
   fill: white;
 }
 
 .footer_copy {
-  margin-right: 120px;
+  margin-right: 103px;
 }
 
 .footer_phone {
@@ -1328,6 +1337,7 @@ section {
   padding-top: 59px;
   padding-bottom: 106px;
   margin-top: 0;
+  text-align: center;
 }
 
 .feedback input[type=text] {
@@ -1382,6 +1392,32 @@ section {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.main_page .header_logo svg use {
+  fill: #fff;
+}
+
+.main_page .header_social svg use {
+  fill: #fff;
+}
+
+.main_page .header_nav {
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.main_page .header_nav-link a {
+  color: #fff;
+}
+
+.main_page .header .btn {
+  color: #fff;
+}
+
+.main_page .header_phone {
+  color: #fff;
 }
 
 .hero {
@@ -2221,7 +2257,7 @@ section {
 
 @media (width < 1150px) {
   .footer_copy {
-    margin-right: 100px;
+    margin-right: 57px;
   }
 }
 

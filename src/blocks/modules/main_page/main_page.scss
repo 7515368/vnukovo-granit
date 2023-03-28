@@ -5,6 +5,32 @@
     top: 0;
     left: 0;
     width: 100%;
+    &_logo {
+      svg {
+        use {
+          fill: #fff;
+        }
+      }
+    }
+    &_social {
+      svg use {
+        fill: #fff;
+      }
+    }
+    &_nav {
+      color: #fff;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      &-link a {
+        color: #fff;
+      }
+    }
+    .btn {
+      color: #fff;
+    }
+    &_phone {
+      color: #fff;
+    }
   }
 }
 
@@ -140,7 +166,6 @@
   &_container {
     position: relative;
     z-index: 2;
-    // transform: translateY(-200px);
   }
   &_wrapper {
     display: grid;

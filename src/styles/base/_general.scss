@@ -121,6 +121,7 @@ img {
   max-width: 100%;
 }
 .btn {
+  text-align: center;
   border: 1px solid $light-blue;
   border-radius: 21px;
   font-weight: 400;
@@ -129,7 +130,7 @@ img {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: $main-color;
   padding-top: 9px;
   padding-bottom: 10px;
   min-width: 295px;
@@ -177,4 +178,8 @@ section {
     height: 2px;
     background: $light-blue;
   }
+}
+
+.wrap {
+  padding-bottom: 118px;
 }
