@@ -1,4 +1,4 @@
-// import "%modules%/header/header";
+import "%modules%/header/burger-menu";
 import "%modules%/catalogue/catalogue";
 import "%modules%/projects/projects";
 import "%modules%/reviews/reviews";

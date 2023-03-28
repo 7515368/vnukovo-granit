@@ -19,6 +19,9 @@
       li {
         padding: 9px 38px;
         background: $grey;
+        @media (width < 980px) {
+          padding: 9px 18px;
+        }
         @media (width < 680px) {
           font-size: 10px;
           line-height: 15px;

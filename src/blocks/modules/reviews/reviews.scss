@@ -2,22 +2,15 @@
   background: $blue;
   margin-bottom: 0;
   padding-top: 63px;
-  padding-bottom: 103px;
+  padding-bottom: 203px;
   margin-top: 114px;
   overflow: hidden;
   h2 {
     color: #fff;
     margin-bottom: 67px;
   }
-  &_container {
-    width: 100%;
-  }
+
   &_slider {
-    margin-left: 300px;
-    // margin-right: -45%;
-    @media (width < 680px) {
-      margin-left: 0;
-    }
     .slick-prev,
     .slick-next {
       transform: none;
@@ -55,11 +48,10 @@
       }
     }
     .slick-dots {
-      transform: translateX(-150px);
+      transform: translateX(-30px);
       bottom: -70px;
-      // transform: translateX(-50%);
-      // bottom: -70px;
-      // left: calc(25% - 100px);
+      width: 50%;
+
       @media (width < 680px) {
         transform: none;
       }
@@ -96,10 +88,8 @@
     }
   }
   &_rate {
-    float: left;
     width: 210px;
     color: #fff;
-    margin-right: 100px;
     margin-top: 60px;
     font-size: 17px;
     line-height: 25px;
@@ -117,6 +107,9 @@
   }
   .btn {
     display: inline-block;
-    margin: 90px auto 0;
+    position: absolute;
+    left: 50%;
+    // bottom: 0;
+    transform: translate(-50%, 90px);
   }
 }

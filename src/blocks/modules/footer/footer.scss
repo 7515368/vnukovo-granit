@@ -10,8 +10,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-left: 0;
-    padding-right: 0;
+    // padding-left: 0;
+    // padding-right: 0;
     @media (width < 680px) {
       display: block;
       text-align: center;
@@ -22,6 +22,9 @@
   &_logo {
     width: 250px;
     flex-shrink: 0;
+    svg use {
+      fill: white;
+    }
     @media (width < 680px) {
       width: 100%;
       margin-bottom: 54px;
@@ -120,7 +123,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 250%;
-    @media (width < 680px) {
+    @media (width < 980px) {
       display: none;
     }
     ul {

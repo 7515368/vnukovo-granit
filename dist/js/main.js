@@ -11,6 +11,45 @@
 
 /***/ }),
 
+/***/ "./src/blocks/modules/header/burger-menu.js":
+/*!**************************************************!*\
+  !*** ./src/blocks/modules/header/burger-menu.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./.yarn/cache/jquery-npm-3.6.4-c665e9b5ea-8354f7bd0a.zip/node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+function burgerMenu(selector) {
+  var menu = jquery__WEBPACK_IMPORTED_MODULE_0___default()(selector);
+  var button = menu.find('.burger-menu_button', '.burger-menu_lines');
+  var links = menu.find('.burger-menu_link');
+  var overlay = menu.find('.burger-menu_overlay');
+  button.on('click', function (e) {
+    e.preventDefault();
+    toggleMenu();
+  });
+  links.on('click', function () {
+    return toggleMenu();
+  });
+  overlay.on('click', function () {
+    return toggleMenu();
+  });
+  function toggleMenu() {
+    menu.toggleClass('burger-menu_active');
+    if (menu.hasClass('burger-menu_active')) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').css('overlow', 'hidden');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').css('overlow', 'visible');
+    }
+  }
+}
+burgerMenu('.burger-menu');
+
+/***/ }),
+
 /***/ "./src/blocks/modules/main_page/main_page.js":
 /*!***************************************************!*\
   !*** ./src/blocks/modules/main_page/main_page.js ***!
@@ -120,12 +159,13 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.reviews_slider').slick({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_catalogue_catalogue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/catalogue/catalogue */ "./src/blocks/modules/catalogue/catalogue.js");
-/* harmony import */ var _modules_catalogue_catalogue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_catalogue_catalogue__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_projects_projects__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/projects/projects */ "./src/blocks/modules/projects/projects.js");
-/* harmony import */ var _modules_reviews_reviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/reviews/reviews */ "./src/blocks/modules/reviews/reviews.js");
-/* harmony import */ var _modules_main_page_main_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/main_page/main_page */ "./src/blocks/modules/main_page/main_page.js");
-// import "%modules%/header/header";
+/* harmony import */ var _modules_header_burger_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/burger-menu */ "./src/blocks/modules/header/burger-menu.js");
+/* harmony import */ var _modules_catalogue_catalogue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/catalogue/catalogue */ "./src/blocks/modules/catalogue/catalogue.js");
+/* harmony import */ var _modules_catalogue_catalogue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_catalogue_catalogue__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_projects_projects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/projects/projects */ "./src/blocks/modules/projects/projects.js");
+/* harmony import */ var _modules_reviews_reviews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/reviews/reviews */ "./src/blocks/modules/reviews/reviews.js");
+/* harmony import */ var _modules_main_page_main_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/main_page/main_page */ "./src/blocks/modules/main_page/main_page.js");
+
 
 
 

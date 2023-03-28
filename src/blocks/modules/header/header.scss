@@ -8,12 +8,20 @@
     padding-right: 0;
     @media (width < 680px) {
       flex-direction: row-reverse;
-      padding: 24px 30px;
+      padding: 24px 30px 0 100px;
     }
   }
   &_logo {
-    @media (width < 680px) {
-      width: 120px;
+    svg {
+      width: 200px;
+      height: 71px;
+      @media (width < 680px) {
+        width: 120px;
+        height: 43px;
+      }
+      use {
+        fill: #fff;
+      }
     }
   }
   &_contacts {
@@ -29,7 +37,7 @@
     margin-left: 40px;
     display: flex;
     gap: 16px;
-    @media (width < 680px) {
+    @media (width < 980px) {
       display: none;
     }
     svg {
