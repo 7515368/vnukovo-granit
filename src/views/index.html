@@ -1,0 +1,165 @@
+@@include("../views/layouts/head.html")
+
+<body class="">
+
+    <div class="main_page">
+        @@include("../blocks/modules/header/header.html")
+
+
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero_slider slider">
+                    <div class="">
+                        <div class="hero_slider-subtitle _border">Акция до конца зимы</div>
+                        <div class="hero_slider-title">10% скидка на изготовление памятников хранение - бесплатно!</div>
+                    </div>
+                    <div class="">
+                        <div class="hero_slider-subtitle _border">Акция до конца зимы</div>
+                        <div class="hero_slider-title">10% скидка на изготовление памятников
+                            хранение - бесплатно!</div>
+                    </div>
+                </div>
+                <a href="" class="btn btn_blue">
+                    Связаться с нами
+                </a>
+
+            </div>
+        </section>
+
+
+        <section class="welcome">
+            <div class="welcome_title">С 2004 года изготавливаем памятники и мемориальные комплексы
+                любой сложности.</div>
+            <div class="welcome_subtitle">Работаем со всеми кладбищами <br>
+                Москвы и Подмосковья.</div>
+
+        </section>
+        <section class="projects">
+            <div class="container">
+                <h2>Готовые проекты</h2>
+                <div class="slider projects_slider">
+                    @@include("../blocks/modules/projects/projects.html")
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h3>Почему нам стоит доверять:</h3>
+            <div class="container services_container">
+
+                <div class="scroll">
+                    <div class="services_wrapper">
+                        <div class="services_item">
+                            <div class="img">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#icon_1"></use>
+                                </svg>
+                            </div>
+                            <h4 class="_border">Собственное производство</h4>
+                            <p>Мы не являемся посредниками. Более того, многие посредники заказывают памятники именно у
+                                нас
+                            </p>
+                        </div>
+                        <div class="services_item">
+                            <div class="img">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#icon_2"></use>
+                                </svg>
+                            </div>
+                            <h4 class="_border">Опыт
+                                работы</h4>
+                            <p>Мы занимаемся изготовлением памятников с 2004 года и за это время выполнили более 500
+                                проектов
+                            </p>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="img">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#icon_3"></use>
+                                </svg>
+                            </div>
+                            <h4 class="_border">Прямые
+                                поставки</h4>
+                            <p>Мы получаем камень от надежных поставщиков</p>
+                        </div>
+                        <div class="services_item">
+                            <div class="img">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#icon_4"></use>
+                                </svg>
+                            </div>
+                            <h4 class="_border">Контакты
+                                на кладбищах</h4>
+                            <p>Мы устанавливали памятники на большинстве крупных кладбищ Москвы и области. Мы знаем, к
+                                кому
+                                обращаться,
+                                и как решать вопросы</p>
+                        </div>
+                        <div class="services_item">
+                            <div class="img">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#icon_5"></use>
+                                </svg>
+                            </div>
+                            <h4 class="_border">Работа
+                                под ключ</h4>
+                            <p> Мы сами проектируем, изготавливаем, доставляем, устанавливаем и обслуживаем памятники и
+                                мемориальные
+                                комплексы</p>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="img">
+                                <svg>
+                                    <use xlink:href="img/sprites/sprite.svg#icon_6"></use>
+                                </svg>
+                            </div>
+                            <h4 class="_border">Персональный
+                                подход</h4>
+                            <p>Мы выслушиваем все ваши пожелания и воплощаем ваши замыслы</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="services_description">
+                    <div class="services_description-subtitle"> И самое главное </div>
+                    <div class="services_description-title">МЫ ВЫДЕРЖИВАЕМ СРОКИ</div>
+                    <p>Все это позволяет нам держать умеренные цены при высоком качестве работы</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="catalogue">
+            <div class="container">
+                <h2>Каталог</h2>
+
+
+                @@include("../blocks/modules/catalogue/catalogue.html")
+
+
+                <a href="" class="btn btn_blue">Смотреть все варианты</a>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2>Отзывы</h2>
+
+            @@include("../blocks/modules/reviews/reviews.html")
+
+        </section>
+
+        <section class="feedback">
+            @@include("../blocks/modules/feedback/feedback.html")
+
+        </section>
+    </div>
+
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

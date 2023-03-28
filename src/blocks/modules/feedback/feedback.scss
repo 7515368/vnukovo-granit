@@ -1,0 +1,59 @@
+.feedback {
+  background: $grey;
+  padding-top: 59px;
+  padding-bottom: 106px;
+  margin-top: 0;
+
+  input[type="text"] {
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    @media (width < 680px) {
+      width: 100%;
+      margin-bottom: 34px;
+      height: 52px;
+    }
+  }
+  &_inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 47px;
+    grid-row-gap: 42px;
+    margin-bottom: 73px;
+    margin-top: 93px;
+    @media (width < 680px) {
+      margin-top: 22px;
+      margin-bottom: 64px;
+    }
+    @media (width < 680px) {
+      display: block;
+    }
+  }
+
+  .input_1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .input_2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .textarea {
+    grid-area: 1 / 2 / 3 / 3;
+    height: 170px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    @media (width < 680px) {
+      width: 100%;
+    }
+  }
+  .btn {
+    margin-bottom: 42px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
