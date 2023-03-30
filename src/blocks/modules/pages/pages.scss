@@ -1,6 +1,9 @@
 .wrap {
-  //   padding-bottom: 118px;
+  padding-bottom: 118px;
   text-align: center;
+  @media (width < 680px) {
+    margin-top: 64px;
+  }
   p {
     margin-bottom: 20px;
     font-weight: 400;
@@ -82,7 +85,7 @@
   padding-top: 60px;
   padding-bottom: 110px;
   background: #ebebec;
-  margin-top: 118px;
+  margin-top: 0;
   &_list {
     max-width: var(--width);
     margin: auto;
@@ -130,6 +133,9 @@
   .catalogue_list {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 47px;
+    @media (width < 680px) {
+      display: block;
+    }
   }
 }
 
@@ -137,10 +143,61 @@
   width: 30%;
   flex-grow: 0;
   text-align: left;
+  padding-right: 47px;
 }
 
 .filtr {
-  label {
-    display: block;
+  text-align: left;
+  margin-bottom: 112px;
+}
+
+.search {
+  input.search_iput {
+    height: 64px;
+    padding-left: 34px;
+    border: 1px solid #252734;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 12px 44px;
+    min-width: initial;
+    margin-top: 36px;
+  }
+}
+.nav_pages {
+  text-align: center;
+  margin-top: 85px;
+  margin-bottom: 130px;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    li {
+      font-size: 15px;
+      line-height: 22px;
+      a {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 1px solid $main-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $main-color;
+      }
+      &.active {
+        a {
+          background: $light-blue;
+          border-color: $light-blue;
+          color: #fff;
+        }
+      }
+    }
   }
 }

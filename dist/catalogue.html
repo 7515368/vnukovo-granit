@@ -5,12 +5,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Внуково Гранит</title>
+    <meta property="og:title"
+        content="Памятники из гранита на могилу, изготовление памятников и надгробий - гранитная мастерская Внуково Гранит">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vnukovo-granit.ru/">
+    <meta property="og:image" content="https://vnukovo-granit.ru//project/web/img/logo.svg">
+    <meta property="og:description"
+        content="Памятники из гранита, изготовление памятников и надгробий, низкие цены -  гранитная мастерская Внуково Гранит">
+
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.min.css">
 </head>
 
 <body>
@@ -94,33 +102,56 @@
 
             <div class="columns">
 
-                <div class="side-Left">
+                <div class="side_left _hidden_mobile">
                     <div class="filtr">
-                        <label for="
-             "> <input type="radio"> Из красного камня</label>
-                        <label for="
-             "> <input type="radio"> С ангелами</label>
-                        <label for="
-             "> <input type="radio"> С деревом</label>
-                        <label for="
-             "> <input type="radio"> Мусульманские</label>
-                        <label for="
-             "> <input type="radio"> Православные</label>
-                        <label for="
-             "> <input type="radio"> Детские</label>
-                        <label for="
-             "> <input type="radio"> С птицами</label>
-                        <label for="
-             "> <input type="radio"> С крестом</label>
-                        <label for="
-             "> <input type="radio"> С цветами</label>
+                        <div class="form_radio">
+                            <input id="radio-1" type="radio" name="radio" value="1" checked>
+                            <label for="radio-1"> Из красного камня</label>
+                        </div>
+                        <div class="form_radio">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2"> С ангелами</label>
+                        </div>
+
+                        <div class="form_radio">
+                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <label for="radio-3"> С деревом</label>
+                        </div>
+
+                        <div class="form_radio">
+                            <input id="radio-4" type="radio" name="radio" value="4">
+                            <label for="radio-4">Мусульманские</label>
+                        </div>
+
+                        <div class="form_radio">
+                            <input id="radio-5" type="radio" name="radio" value="5">
+                            <label for="radio-5"> Православные</label>
+                        </div>
+
+                        <div class="form_radio">
+                            <input id="radio-6" type="radio" name="radio" value="6">
+                            <label for="radio-6"> Детские</label>
+                        </div>
+                        <div class="form_radio">
+                            <input id="radio-7" type="radio" name="radio" value="7">
+                            <label for="radio-7"> С птицами</label>
+                        </div>
+                        <div class="form_radio">
+                            <input id="radio-8" type="radio" name="radio" value="8">
+                            <label for="radio-8"> С крестом </label>
+                        </div>
+                        <div class="form_radio">
+                            <input id="radio-9" type="radio" name="radio" value="9" disabled>
+                            <label for="radio-9"> С цветами </label>
+                        </div>
+
                     </div>
 
 
                     <div class="search">
-                        <input type="text" value="" placeholder="Поиск">
+                        <input type="text" value="" placeholder="Поиск" class="search_iput">
 
-                        Найти
+                        <a href="" class="btn btn_blue">Найти</a>
 
                     </div>
 
@@ -185,14 +216,43 @@
                     </div>
                 </div>
 
+
+
             </div>
 
+            <div class="nav_pages">
+                <ul>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li>...</li>
+                    <li><a href="">21</a></li>
+                </ul>
+            </div>
 
-
-
+            <a href="" class="btn btn_blue">Заполнить заявку</a>
         </div>
 
     </div>
+    <section class="feedback">
+        <h2>Связаться с нами</h2>
+<div class="container">
+    <form action="" class="feedback_form">
+        <div class="feedback_inputs">
+            <input type="text" class="input_1">
+            <input type="text" class="input_2">
+            <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <a href class="btn btn_blue">Отправить</a>
+        <p> Отправляя форму, вы даете согласие на <a href="">обработку персональных данных</a> </p>
+
+    </form>
+
+</div>
+
+    </section>
 
     <footer class="footer">
     <div class="container footer_container">
@@ -277,7 +337,8 @@
         </div>
     </div>
 </footer>
-    <script src="../js/vendor.js"></script>
+    <script src="../js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

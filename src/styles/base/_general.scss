@@ -62,6 +62,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+input {
+  font-family: $main-font;
+}
 .wrap {
   flex: 1 0 auto;
 }
@@ -177,5 +181,10 @@ section {
     width: 81px;
     height: 2px;
     background: $light-blue;
+  }
+}
+@media (width < 680px) {
+  ._hidden_mobile {
+    display: none;
   }
 }

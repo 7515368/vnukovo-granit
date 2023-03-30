@@ -1,12 +1,1 @@
-<svg width="35" height="46" viewBox="0 0 35 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M34.3186 38.76C34.3186 40.1 33.2316 41.186 31.8916 41.186H5.31763C3.97663 41.186 2.89062 40.1 2.89062 38.76V3.27002C2.89062 1.93002 3.97663 0.843018 5.31763 0.843018H31.8916C33.2316 0.843018 34.3186 1.93002 34.3186 3.27002V38.76Z" stroke="white" stroke-miterlimit="10"/>
-<path d="M0.679688 8.60101H5.0667" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M0.679688 16.877H5.0667" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M0.679688 25.152H5.0667" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M0.679688 33.428H5.0667" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.74023 0.999023V41.08" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.2793 41.323V45.25L12.9843 43.546L14.6893 45.25V41.323" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.4834 18.8571H24.5474" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15.4873 21.1271H27.5433" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21.5161 14.499C23.2072 14.499 24.5781 13.1281 24.5781 11.437C24.5781 9.74592 23.2072 8.375 21.5161 8.375C19.825 8.375 18.4541 9.74592 18.4541 11.437C18.4541 13.1281 19.825 14.499 21.5161 14.499Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg width="35" height="46" viewBox="0 0 35 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.319 38.76a2.427 2.427 0 01-2.427 2.426H5.318A2.426 2.426 0 012.89 38.76V3.27A2.427 2.427 0 015.318.843h26.574a2.428 2.428 0 012.427 2.427v35.49z" stroke="#fff" stroke-miterlimit="10"/><path d="M.68 8.601h4.387M.68 16.877h4.387M.68 25.152h4.387M.68 33.428h4.387M8.74.999V41.08m2.54.243v3.927l1.704-1.704 1.705 1.704v-3.927m3.794-22.466h6.064m-9.06 2.27h12.056m-6.027-6.628a3.062 3.062 0 100-6.124 3.062 3.062 0 000 6.124z" stroke="#fff" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
