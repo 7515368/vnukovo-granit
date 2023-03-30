@@ -51,21 +51,15 @@
       transform: translateX(-30px);
       bottom: -70px;
       width: 50%;
-
-      @media (width < 680px) {
-        transform: none;
-      }
-      li {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: #ffffff;
-        &.slick-active {
-          background: $light-blue;
+      .slick-dots {
+        li {
+          background: #fff;
+          &.slick-active {
+            background: $light-blue;
+          }
         }
       }
     }
-
     .item {
       background: #fff;
       padding: 32px 41px;

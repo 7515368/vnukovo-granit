@@ -16,7 +16,7 @@
       display: block;
     }
     &:hover .burger-menu_lines {
-      filter: brightness(0.7);
+      // filter: brightness(0.7);
     }
   }
   &_lines {
@@ -30,9 +30,10 @@
     position: absolute;
     width: 26px;
     height: 2px;
-    background-color: #fff;
     border-radius: 2px;
     transition: 0.4s;
+
+    background-color: rgba($main-color, 1);
   }
 
   &_lines::before {
@@ -60,6 +61,7 @@
   }
 
   &_nav {
+    text-align: center;
     padding-top: 24px;
     top: 0;
     width: 100%;
@@ -83,7 +85,7 @@
     }
     .burger-menu_lines::before,
     .burger-menu_lines::after {
-      background: $main-color;
+      background: $main-color !important;
     }
     .burger-menu_overlay {
       display: block;

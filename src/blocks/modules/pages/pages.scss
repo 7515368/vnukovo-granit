@@ -1,0 +1,146 @@
+.wrap {
+  //   padding-bottom: 118px;
+  text-align: center;
+  p {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h1,
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  .text_block {
+    max-width: 975px;
+    margin: auto;
+  }
+  .img {
+    width: 100%;
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .slider {
+    margin-bottom: 50px;
+    .slick-dots {
+      bottom: -46px;
+    }
+  }
+}
+
+.welcome {
+  max-width: 975px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 94px;
+  @media (width < 680px) {
+    padding: 0 25px;
+  }
+  &_title {
+    font-size: 29px;
+    line-height: 43px;
+    text-align: center;
+    font-weight: 700;
+    max-width: 1000px;
+    margin: auto;
+    @media (width < 680px) {
+      font-size: 21px;
+      line-height: 31px;
+    }
+  }
+  &_subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: 28px;
+    @media (width < 680px) {
+      font-size: 15px;
+      line-height: 150%;
+    }
+  }
+  p {
+    margin-top: 30px;
+  }
+}
+
+.scroll {
+  @media (width < 680px) {
+    width: calc(100% + 25px);
+    margin-right: -25px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+}
+
+.materials {
+  padding-top: 60px;
+  padding-bottom: 110px;
+  background: #ebebec;
+  margin-top: 118px;
+  &_list {
+    max-width: var(--width);
+    margin: auto;
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 47px;
+    grid-row-gap: 65px;
+    margin-bottom: 65px;
+    .item {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 25px;
+    }
+  }
+}
+.for_specialist {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 106px;
+  padding-bottom: 118px;
+  background: url(../img/roses.png) no-repeat;
+  background-size: cover;
+  color: #fff;
+  h2 {
+    color: #fff;
+  }
+  .subtitle {
+    margin-top: 51px;
+    margin-bottom: 49px;
+    font-size: 17px;
+    line-height: 150%;
+
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+  .btn {
+    margin-top: 37px;
+  }
+}
+
+.columns {
+  display: flex;
+  .catalogue_list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 47px;
+  }
+}
+
+.side_left {
+  width: 30%;
+  flex-grow: 0;
+  text-align: left;
+}
+
+.filtr {
+  label {
+    display: block;
+  }
+}

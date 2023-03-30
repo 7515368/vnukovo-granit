@@ -1,0 +1,56 @@
+.slick-dots {
+  bottom: -10px;
+  li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+    &.slick-active {
+      background: $light-blue;
+    }
+  }
+}
+.slick-prev,
+.slick-next {
+  top: 35%;
+  background: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: sans-serif;
+  content: "";
+  background: url(../img/sprites/icon-arrow.svg) no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  color: transparent;
+}
+
+.slick-prev:before {
+  transform: rotate(180deg);
+}
+
+.slick-dots {
+  @media (width < 680px) {
+    transform: none;
+  }
+  li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #252734;
+    // background: #ffffff;
+    &.slick-active {
+      background: $light-blue;
+    }
+  }
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: transparent;
+}

@@ -5,7 +5,7 @@ $('.projects_slider').slick({
     // infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    dots: true,
+    dots: false,
     responsive: [
 
         {
@@ -13,7 +13,8 @@ $('.projects_slider').slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows: false
+                arrows: false,
+                dots: true,
             }
         },
 
