@@ -212,3 +212,24 @@ section {
     display: none;
   }
 }
+
+.breadcrumbs {
+  margin-top: -40px;
+  margin-bottom: 20px;
+  ul {
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    gap: 10px;
+    li {
+      a {
+        color: $main-color;
+        &:hover {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+}
