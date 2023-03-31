@@ -292,3 +292,65 @@
     margin-top: 24px;
   }
 }
+
+.portfolio {
+  &_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 47px;
+    grid-row-gap: 85px;
+    text-align: center;
+    width: 100%;
+    @media (width < 680px) {
+      display: block;
+    }
+    .item {
+      overflow: hidden;
+      @media (width < 680px) {
+        margin-bottom: 78px;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 25px;
+        min-height: 50px;
+      }
+      .date {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+      }
+    }
+    .link_more {
+      margin-top: 30px;
+    }
+    .img_slider {
+      width: 100%;
+      margin-bottom: 10px;
+      .slick-dots {
+        bottom: 17px;
+        li {
+          background: #fff;
+          &.slick-active {
+            background: $light-blue;
+          }
+        }
+      }
+    }
+  }
+  &_filtr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 65px;
+    text-align: left;
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+    .title {
+      white-space: nowrap;
+    }
+  }
+}

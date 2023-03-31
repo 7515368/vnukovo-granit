@@ -1,0 +1,77 @@
+.select {
+  position: relative;
+  display: block;
+  min-width: 120px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 26px;
+  &__head {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 10px 40px 10px 25px;
+    font-size: 16px;
+    line-height: 24px;
+    background: #ebebec;
+    cursor: pointer;
+    &::after {
+      width: 12px;
+      height: 6px;
+      background: url(../img/sprites/arrow-down.svg);
+      background-size: 12px 6px;
+      position: absolute;
+      right: 18px;
+      bottom: 50%;
+      transform: translateY(50%);
+      content: "";
+      display: block;
+      transition: 0.2s ease-in;
+    }
+    &.open::after {
+      transform: translateY(50%) rotate(180deg);
+    }
+  }
+}
+
+.select__list {
+  display: none;
+  position: absolute;
+  background: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  max-height: 205px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  scrollbar-color: dark;
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: #f8f9fa;
+    padding: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #d9d9d9;
+  }
+
+  .select__item {
+    position: relative;
+    border-top: 1px solid rgba(224, 229, 231, 0.5);
+    padding: 10px 15px;
+    cursor: pointer;
+    list-style-type: none;
+  }
+
+  .select__item:hover {
+    background-color: rgba(224, 229, 231, 0.5);
+  }
+}
