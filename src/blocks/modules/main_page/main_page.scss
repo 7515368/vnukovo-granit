@@ -57,7 +57,8 @@
       .slick-dots {
         li {
           background: #fff;
-          &.slick-active {
+          &.slick-active,
+          &:hover {
             background: $light-blue;
           }
         }

@@ -16,10 +16,6 @@
       transform: none;
       bottom: -80px;
       top: auto;
-      background: #fff;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
     }
     .slick-next {
       right: 20px;
@@ -28,19 +24,7 @@
       left: auto;
       right: 100px;
     }
-    .slick-prev:before,
-    .slick-next:before {
-      font-family: sans-serif;
-      content: "";
-      background: url(../img/sprites/icon-arrow.svg) no-repeat;
-      background-size: contain;
-      width: 16px;
-      height: 16px;
-      display: inline-block;
-    }
-    .slick-prev:before {
-      transform: rotate(180deg);
-    }
+
     .slick-slide {
       padding: 0 20px;
       @media (width < 680px) {
@@ -51,12 +35,11 @@
       transform: translateX(-30px);
       bottom: -70px;
       width: 50%;
-      .slick-dots {
-        li {
-          background: #fff;
-          &.slick-active {
-            background: $light-blue;
-          }
+      li {
+        background: #fff;
+        &.slick-active,
+        &:hover {
+          background: $light-blue;
         }
       }
     }
@@ -103,7 +86,7 @@
     display: inline-block;
     position: absolute;
     left: 50%;
-    // bottom: 0;
     transform: translate(-50%, 90px);
+    min-width: 290px;
   }
 }

@@ -17,17 +17,27 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-}
-.slick-prev:before,
-.slick-next:before {
-  font-family: sans-serif;
-  content: "";
-  background: url(../img/sprites/icon-arrow.svg) no-repeat;
-  background-size: contain;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  color: transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  z-index: 10;
+  &:before {
+    font-family: sans-serif;
+    content: "";
+    background: url(../img/sprites/icon-arrow.svg) no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    color: transparent;
+  }
+  &:hover {
+    background-color: $light-blue;
+    &:before,
+    &:before {
+      background: url(../img/sprites/icon-arrow_w.svg) no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
 .slick-prev:before {
@@ -43,8 +53,8 @@
     height: 8px;
     border-radius: 50%;
     background: #252734;
-    // background: #ffffff;
-    &.slick-active {
+    &.slick-active,
+    &:hover {
       background: $light-blue;
     }
   }

@@ -12,9 +12,16 @@ $('.gallery_slider').slick({
         {
             breakpoint: 680,
             settings: {
-                // arrows: false
             }
         },
 
     ]
+});
+
+$('.img_slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
 });

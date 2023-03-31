@@ -29,6 +29,12 @@
     align-items: center;
   }
   &_btn {
+    padding-left: 52px;
+    padding-right: 49px;
+    &:hover {
+      background: $hover-blue;
+      border-color: $hover-blue;
+    }
     @media (width < 680px) {
       display: none;
     }

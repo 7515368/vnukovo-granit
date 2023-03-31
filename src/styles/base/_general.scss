@@ -116,6 +116,7 @@ input {
 
 a {
   color: $light-blue;
+  text-decoration: none;
   transition: all 0.3s ease;
   &:hover {
     color: $hover-blue;
@@ -135,9 +136,8 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: $main-color;
-  padding-top: 9px;
+  padding-top: 11px;
   padding-bottom: 10px;
-  min-width: 295px;
   transition: all 0.3s ease;
   display: inline-block;
   height: 42px;
@@ -152,11 +152,11 @@ img {
   &_blue {
     background: $light-blue;
     color: #ffffff;
-    padding-left: 51px;
-    padding-right: 51px;
+    padding-left: 52px;
+    padding-right: 49px;
     @media (width < 680px) {
       padding-left: 32px;
-      padding-right: 32px;
+      padding-right: 29px;
     }
     &:hover {
       background: $hover-blue;
@@ -164,6 +164,30 @@ img {
     }
   }
 }
+.link_more {
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 21px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $light-blue;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  transition: all 0.16s ease;
+  display: inline-block;
+  height: 42px;
+  padding-left: 51px;
+  padding-right: 51px;
+  &:hover {
+    color: #ffffff;
+    background: $light-blue;
+  }
+}
+
 p {
   margin: 0;
 }
