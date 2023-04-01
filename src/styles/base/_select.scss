@@ -5,14 +5,21 @@
   width: 100%;
   max-width: 400px;
   margin-left: 26px;
+  @media (width < 680px) {
+    font-size: 10px;
+    line-height: 15px;
+  }
   &__head {
     width: 100%;
     max-width: 100%;
-
     padding: 10px 40px 10px 25px;
     font-size: 16px;
     line-height: 24px;
     background: #ebebec;
+    @media (width < 680px) {
+      font-size: 10px;
+      line-height: 15px;
+    }
     cursor: pointer;
     &::after {
       width: 12px;
@@ -36,7 +43,7 @@
 .select__list {
   display: none;
   position: absolute;
-  background: #fff;
+  background: #ebebec;
   top: 100%;
   left: 0;
   right: 0;
@@ -52,6 +59,10 @@
   scrollbar-color: dark;
   scrollbar-width: thin;
   overscroll-behavior: contain;
+  @media (width < 680px) {
+    font-size: 10px;
+    line-height: 15px;
+  }
   &::-webkit-scrollbar {
     width: 7px;
     background-color: #f8f9fa;
@@ -65,7 +76,7 @@
 
   .select__item {
     position: relative;
-    border-top: 1px solid rgba(224, 229, 231, 0.5);
+    border-top: 1px solid #fff;
     padding: 10px 15px;
     cursor: pointer;
     list-style-type: none;

@@ -48,12 +48,15 @@
     margin-bottom: 20px;
     margin-top: 0;
     @media (width < 680px) {
-      padding-top: 180px;
+      padding-top: 200px;
       margin-bottom: 60px;
     }
     &_slider {
       color: #fff;
-      margin-bottom: 70px !important;
+      // margin-bottom: 70px !important;
+      @media (width < 680px) {
+        margin-bottom: 100px;
+      }
       .slick-dots {
         li {
           background: #fff;
@@ -89,6 +92,7 @@
           font-size: 27px;
           line-height: 40px;
           max-width: 100%;
+          margin-bottom: 80px;
         }
       }
     }
@@ -220,6 +224,13 @@
           font-size: 15px;
           line-height: 150%;
         }
+      }
+    }
+  }
+  .projects {
+    &_slider {
+      .item {
+        margin-bottom: 0px;
       }
     }
   }
