@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     @media (width < 680px) {
-      margin-left: 34px;
+      margin-left: 50px;
     }
   }
   &_btn {
@@ -67,6 +67,12 @@
     font-weight: 300;
     font-size: 22px;
     line-height: 32px;
+    a {
+      color: $main-color;
+      &:hover {
+        color: $light-blue;
+      }
+    }
     @media (width < 680px) {
       font-weight: 300;
       font-size: 14px;
@@ -81,7 +87,7 @@
     text-transform: uppercase;
     color: $main-color;
     max-width: 1180px;
-    margin: 35px auto;
+    margin: 35px auto 0;
     border-top: 1px solid $main-color;
     border-bottom: 1px solid $main-color;
 
@@ -92,11 +98,18 @@
       padding-top: 16px;
       padding-bottom: 17px;
     }
-    &-link a {
-      text-decoration: none;
-      color: $main-color;
-      &:hover {
-        color: $light-blue;
+    &-link {
+      a {
+        text-decoration: none;
+        color: $main-color;
+        &:hover {
+          color: $light-blue;
+        }
+      }
+      &.active {
+        a {
+          color: $light-blue;
+        }
       }
     }
     @media (width < 680px) {

@@ -1,3 +1,5 @@
+$img-height: 260px;
+
 .main_page {
   text-align: center;
   .header {
@@ -101,7 +103,9 @@
       }
     }
   }
-
+  .catalogue_list {
+    margin-bottom: 114px;
+  }
   .services {
     background: $blue url(../img/services_bg.webp) 100% 100% no-repeat;
     background-size: 100%;
@@ -235,6 +239,9 @@
     &_slider {
       .item {
         margin-bottom: 0px;
+        img {
+          height: $img-height;
+        }
       }
     }
   }

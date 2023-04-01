@@ -63,6 +63,9 @@
       gap: 0;
     }
     .item {
+      a {
+        color: $main-color;
+      }
       @media (width < 680px) {
         width: 80vw;
         flex-shrink: 0;
@@ -89,6 +92,12 @@
       }
       .link_more {
         margin-top: 23px;
+      }
+      &:hover {
+        .link_more {
+          background: $light-blue;
+          color: #fff;
+        }
       }
     }
   }

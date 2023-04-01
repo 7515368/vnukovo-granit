@@ -1,14 +1,14 @@
 import $ from "jquery";
 import "slick-carousel";
 
-// $('.gallery_slider').slick({
-//     infinite: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     dots: true,
-//     arrows: false,
+$('.about_slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
 
-// });
+});
 
 $('.img_slider').slick({
     infinite: true,

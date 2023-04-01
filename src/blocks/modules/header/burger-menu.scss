@@ -127,12 +127,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px 0 100px;
+    padding: 0 25px 0 75px;
   }
   &_phone {
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
+    a {
+      color: $main-color;
+    }
   }
   &_logo {
     svg {

@@ -1,5 +1,5 @@
 .wrap {
-  padding-top: 20px;
+  padding-top: 60px;
   padding-bottom: 118px;
   text-align: center;
   @media (width < 680px) {
@@ -17,9 +17,22 @@
   }
   h1,
   h2 {
-    margin-bottom: 24px;
+    margin-bottom: 37px;
   }
 
+  .about {
+    &_slider {
+      margin-top: 69px;
+      .slick-prev,
+      .slick-next {
+        top: 50%;
+      }
+    }
+
+    &_img {
+      margin-top: 79px;
+    }
+  }
   .text_block {
     max-width: 975px;
     margin: auto;
@@ -92,6 +105,14 @@
   padding-bottom: 110px;
   background: #ebebec;
   margin-top: 0;
+  text-align: center;
+  h2 {
+    margin-bottom: 37px;
+  }
+  .text_block {
+    max-width: 975px;
+    margin: auto;
+  }
   &_list {
     max-width: var(--width);
     margin: auto;
@@ -107,6 +128,9 @@
       font-size: 17px;
       line-height: 25px;
       text-align: center;
+      img {
+        margin-bottom: 17px;
+      }
     }
   }
 }
@@ -171,6 +195,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    outline: none;
   }
   .btn {
     display: inline-block;
@@ -191,12 +216,17 @@
     gap: 8px;
     li {
       font-size: 15px;
-      line-height: 22px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid $main-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      // cursor: pointer;
       a {
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
-        border: 1px solid $main-color;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -204,16 +234,16 @@
         color: $main-color;
       }
       &:hover {
+        background: #ebebec;
+        border-color: #ebebec;
         a {
-          background: #ebebec;
           color: $light-blue;
-          border-color: #ebebec;
         }
       }
       &.active {
+        background: $light-blue;
+        border-color: $light-blue;
         a {
-          background: $light-blue;
-          border-color: $light-blue;
           color: #fff;
         }
       }
@@ -229,9 +259,9 @@
 
 .map {
   &-content {
-    padding-top: 60px;
+    // padding-top: 60px;
     padding-bottom: 110px;
-    background: #ebebec;
+    // background: #ebebec;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
@@ -376,7 +406,9 @@
       display: flex;
       align-items: center;
       &:first-child {
-        width: 100%;
+        @media (width < 680px) {
+          width: 100%;
+        }
       }
     }
     .title {
