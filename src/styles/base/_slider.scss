@@ -30,6 +30,7 @@
     display: inline-block;
     color: transparent;
   }
+  &:focus,
   &:hover {
     background-color: $light-blue;
     &:before,
