@@ -20,3 +20,4 @@ $('.projects_slider').slick({
 
     ]
 });
+

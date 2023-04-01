@@ -216,6 +216,9 @@ section {
 .breadcrumbs {
   margin-top: -40px;
   margin-bottom: 20px;
+  @media (width < 680px) {
+    display: none;
+  }
   ul {
     list-style: none;
     display: flex;

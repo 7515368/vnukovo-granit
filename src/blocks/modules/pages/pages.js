@@ -1,22 +1,14 @@
 import $ from "jquery";
 import "slick-carousel";
 
-$('.gallery_slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    responsive: [
+// $('.gallery_slider').slick({
+//     infinite: true,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     dots: true,
+//     arrows: false,
 
-        {
-            breakpoint: 680,
-            settings: {
-            }
-        },
-
-    ]
-});
+// });
 
 $('.img_slider').slick({
     infinite: true,

@@ -13,6 +13,8 @@
       width: 100%;
       margin-bottom: 34px;
       height: 52px;
+      font-size: 12px;
+      line-height: 18px;
     }
   }
   &_inputs {
@@ -46,6 +48,8 @@
     outline: none;
     @media (width < 680px) {
       width: 100%;
+      font-size: 12px;
+      line-height: 18px;
     }
   }
   .btn {

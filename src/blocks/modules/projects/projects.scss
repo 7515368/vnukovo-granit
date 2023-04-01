@@ -5,7 +5,7 @@
     margin-top: 55px;
     .slick-prev,
     .slick-next {
-      top: 25%;
+      top: calc((258px / 2) + 21px);
     }
     .slick-next {
       right: 5px;
@@ -167,6 +167,10 @@
       max-width: 80%;
       margin-left: auto;
       margin-right: auto;
+      @media (width < 680px) {
+        font-size: 19px;
+        line-height: 28px;
+      }
     }
   }
   &_content {
@@ -176,7 +180,24 @@
     grid-column-gap: 46px;
     grid-row-gap: 0px;
     text-align: left;
+    margin-top: 55px;
+    @media (width < 680px) {
+      display: block;
+      text-align: center;
+    }
     &-gallery {
+      overflow: hidden;
+      .slick-dots {
+        bottom: 17px;
+        li {
+          width: 8px;
+          height: 8px;
+          background: #fff;
+          &.slick-active {
+            background: $light-blue;
+          }
+        }
+      }
     }
     &-description {
       .rate {
@@ -192,6 +213,81 @@
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 59px;
+      }
+    }
+  }
+  &_about {
+    background: $blue;
+    color: #fff;
+    padding-top: 76px;
+    padding-bottom: 114px;
+    @media (width < 680px) {
+      margin-top: 0;
+      padding-top: 59px;
+      padding-bottom: 98px;
+    }
+    &-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 47px;
+      @media (width < 680px) {
+        display: block;
+        text-align: center;
+      }
+    }
+    &-left {
+      .inner {
+        width: fit-content;
+        text-align: center;
+
+        img {
+          height: 272px;
+        }
+      }
+      .head {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 25px;
+        margin-bottom: 64px;
+        text-align: left;
+        @media (width < 680px) {
+          text-align: center;
+          font-size: 15px;
+          line-height: 22px;
+          margin-bottom: 27px;
+        }
+      }
+      .title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 25px;
+        margin-top: 24px;
+        margin-bottom: 17px;
+      }
+    }
+    &-review {
+      @media (width < 680px) {
+        margin-top: 105px;
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 43px;
+        margin-bottom: 46px;
+        @media (width < 680px) {
+          font-size: 21px;
+          line-height: 31px;
+        }
+      }
+      .reviews {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 72px;
+        .item {
+          height: 272px;
+        }
       }
     }
   }

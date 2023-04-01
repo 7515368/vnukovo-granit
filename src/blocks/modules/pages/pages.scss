@@ -10,6 +10,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    @media (width < 680px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
   h1,
   h2 {
@@ -359,7 +363,7 @@
   }
 }
 .similar_projects {
-  margin-bottom: 127px;
+  margin-bottom: 127px !important;
   .item {
     padding: 0 23px;
     text-align: center;
