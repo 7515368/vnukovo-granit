@@ -1,3 +1,5 @@
+$img-height: 260px;
+
 .projects {
   &_slider {
     margin-left: -23px;
@@ -5,7 +7,8 @@
     margin-top: 55px;
     .slick-prev,
     .slick-next {
-      top: calc((258px / 2) + 21px);
+      top: calc($img-height / 2);
+      transform: translateY(-50%);
     }
     .slick-next {
       right: 5px;
@@ -31,12 +34,29 @@
   .item {
     padding: 0 23px;
     overflow: hidden;
+    a {
+      color: $main-color;
+    }
+    img {
+      height: $img-height;
+    }
     @media (width < 680px) {
       margin-bottom: 78px;
     }
     .link_more {
+      color: $light-blue;
       margin-top: 30px;
+      &:hover {
+        color: #fff;
+      }
     }
+    &:hover {
+      .link_more {
+        background: $light-blue;
+        color: #fff;
+      }
+    }
+
     .price {
       font-weight: 400;
       font-size: 30px;

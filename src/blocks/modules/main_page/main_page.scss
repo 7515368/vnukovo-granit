@@ -23,6 +23,9 @@
       border-bottom: 1px solid #fff;
       &-link a {
         color: #fff;
+        &:hover {
+          color: $light-blue;
+        }
       }
     }
     .btn {
@@ -58,6 +61,7 @@
         margin-bottom: 100px;
       }
       .slick-dots {
+        bottom: 0;
         li {
           background: #fff;
           &.slick-active,
