@@ -15,7 +15,10 @@
 </head>
 
 <body>
-    <header class="header">
+
+
+    <div class="page_not_found">
+        <header class="header">
     <div class="container header_container">
         <div class="burger-menu">
             <a href="" class="burger-menu_button">
@@ -75,25 +78,19 @@
     </div>
 
 </header>
-    <div class="wrap">
+        <div class="container">
+            <div class="title _border"> Этой страницы нет на нашем сайте.</div>
+            <div class="text_block">
+                <p>Если вы интересуетесь изготовлением памятников из гранита,
+                    то посмотрите <a href="">каталог готовых проектов</a> или <a href="">наши работы</a> ,
+                    либо просто <a href="">заполните заявку</a>, и мы с вами свяжемся</p>
 
+
+            </div>
+            <a href="#modal" role="button" class="btn btn_blue">Сважитесь с нами</a>
+        </div>
 
     </div>
-    <section class="feedback">
-        <div class="container">
-    <h2>Связаться с нами</h2>
-    <form action="" class="feedback_form">
-        <div class="feedback_inputs">
-            <input type="text" class="input_1" placeholder="Ваше имя">
-            <input type="text" class="input_2" placeholder="Ваш телефон">
-            <textarea class="textarea" name="" id="" placeholder="Ваши пожелания" cols="30" rows="10"></textarea>
-        </div>
-        <a href class="btn btn_blue">Отправить</a>
-        <p> Отправляя форму, вы даете согласие на <a href="">обработку персональных данных</a> </p>
-    </form>
-</div>
-
-    </section>
     <footer class="footer">
     <div class="container footer_container">
         <div class="footer_logo">
@@ -177,7 +174,37 @@
         </div>
     </div>
 </footer>
+
+
+<!-- Modal -->
+<div class="modal-wrapper" id="modal">
+    <div class="modal-body">
+        <div class="container">
+            <div class="modal-header">
+                <h2 class="heading">Свяжитесь с нами</h2>
+                <a href="#!" role="button" class="close" aria-label="close this modal">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#icon_close"></use>
+                    </svg>
+                </a>
+            </div>
+            <form action="" class="_form">
+                <div class="_inputs">
+                    <input type="text" class="input_1" placeholder="Ваше имя">
+                    <input type="text" class="input_2" placeholder="Ваш телефон">
+
+                </div>
+                <a href class="btn btn_blue">Отправить</a>
+                <p> Отправляя форму, вы даете согласие на <a href="">обработку персональных данных</a> </p>
+            </form>
+
+        </div>
+
+    </div>
+    <a href="#!" class="outside-trigger"></a>
+</div>
     <script src="js/vendor.min.js"></script>
+
 </body>
 
 </html>

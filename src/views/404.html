@@ -15,17 +15,26 @@
 </head>
 
 <body>
-    @@include("../blocks/modules/header/header.html")
-    <div class="wrap">
 
+
+    <div class="page_not_found">
+        @@include("../blocks/modules/header/header.html")
+        <div class="container">
+            <div class="title _border"> Этой страницы нет на нашем сайте.</div>
+            <div class="text_block">
+                <p>Если вы интересуетесь изготовлением памятников из гранита,
+                    то посмотрите <a href="">каталог готовых проектов</a> или <a href="">наши работы</a> ,
+                    либо просто <a href="">заполните заявку</a>, и мы с вами свяжемся</p>
+
+
+            </div>
+            <a href="#modal" role="button" class="btn btn_blue">Сважитесь с нами</a>
+        </div>
 
     </div>
-    <section class="feedback">
-        @@include("../blocks/modules/feedback/feedback.html")
-
-    </section>
     @@include("../blocks/modules/footer/footer.html")
     <script src="js/vendor.js"></script>
+
 </body>
 
 </html>
