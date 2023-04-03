@@ -1,10 +1,11 @@
 .page_not_found {
   text-align: center;
-  background: url(../img/404.png) no-repeat;
+  background: url(../img/404.png) 50% no-repeat;
   background-size: cover;
   padding-top: 285px;
   color: #fff;
   min-height: calc(100vh - 517px);
+  padding-bottom: 114px;
   .header {
     position: absolute;
     top: 0;
