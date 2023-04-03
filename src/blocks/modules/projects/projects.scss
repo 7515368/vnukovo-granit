@@ -48,7 +48,7 @@
     }
   }
   .item {
-    padding: 0 23px;
+    // padding: 0 23px;
     overflow: hidden;
     a {
       color: $main-color;
@@ -151,7 +151,7 @@
       flex-grow: 1;
       list-style: none;
       display: flex;
-      align-items: center;
+      // align-items: center;
       justify-content: center;
       max-width: 790px;
       @media (width < 680px) {
@@ -165,6 +165,9 @@
         background: $grey;
         font-size: 16px;
         line-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @media (width < 980px) {
           padding: 9px 18px;
         }
@@ -291,6 +294,12 @@
         }
         img {
           height: 272px;
+        }
+        &:hover {
+          .link_more {
+            background: $light-blue;
+            color: #fff;
+          }
         }
       }
       .head {

@@ -272,26 +272,9 @@
     p {
       margin-bottom: 20px;
     }
-    .map_link {
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 21px;
-      color: $light-blue;
-      margin-bottom: 36px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      // padding-left: 50px;
-      height: 45px;
-      gap: 16px;
-      svg {
-        width: 37px;
-        height: 45px;
-      }
-    }
   }
   &_place {
-    margin-top: 72px;
+    // margin-top: 72px;
     width: 100%;
     min-height: 385px;
     * {
@@ -315,6 +298,24 @@
     &.small {
       font-size: 16px;
       line-height: 24px;
+    }
+  }
+  .map_link {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-blue;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    // padding-left: 50px;
+    height: 45px;
+    gap: 16px;
+    margin-top: 30px;
+    svg {
+      width: 37px;
+      height: 45px;
     }
   }
   &-email {
@@ -354,6 +355,9 @@
       @media (width < 680px) {
         margin-bottom: 78px;
       }
+      a {
+        color: $main-color;
+      }
       .title {
         font-weight: 700;
         font-size: 17px;
@@ -370,10 +374,21 @@
         line-height: 24px;
         margin-top: 20px;
       }
+      .link_more {
+        color: $light-blue;
+      }
+      &:hover {
+        .link_more {
+          background: $light-blue;
+          color: #fff;
+        }
+      }
     }
     .link_more {
       margin-top: 30px;
+      color: $light-blue;
     }
+
     .img_slider {
       width: 100%;
       margin-bottom: 10px;
