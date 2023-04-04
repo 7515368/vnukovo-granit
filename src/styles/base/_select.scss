@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 400px;
   margin-left: 26px;
-  @media (width < 680px) {
+  @media screen and (max-width: 680px) {
     font-size: 10px;
     line-height: 15px;
   }
@@ -16,7 +16,7 @@
     font-size: 16px;
     line-height: 24px;
     background: #ebebec;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       font-size: 10px;
       line-height: 15px;
     }
@@ -59,7 +59,7 @@
   scrollbar-color: dark;
   scrollbar-width: thin;
   overscroll-behavior: contain;
-  @media (width < 680px) {
+  @media screen and (max-width: 680px) {
     font-size: 10px;
     line-height: 15px;
   }

@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 118px;
   text-align: center;
-  @media (width < 680px) {
+  @media screen and (max-width: 680px) {
     margin-top: 64px;
   }
   p {
@@ -10,7 +10,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       font-size: 12px;
       line-height: 18px;
     }
@@ -57,7 +57,7 @@
   margin: auto;
   margin-top: 70px;
   margin-bottom: 94px;
-  @media (width < 680px) {
+  @media screen and (max-width: 680px) {
     padding: 0 25px;
     margin-bottom: 80px;
   }
@@ -68,7 +68,7 @@
     font-weight: 700;
     max-width: 1000px;
     margin: auto;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       font-size: 21px;
       line-height: 31px;
     }
@@ -81,7 +81,7 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     margin-top: 28px;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       font-size: 15px;
       line-height: 150%;
     }
@@ -92,7 +92,7 @@
 }
 
 .scroll {
-  @media (width < 680px) {
+  @media screen and (max-width: 680px) {
     width: calc(100% + 25px);
     margin-right: -25px;
     overflow-x: auto;
@@ -164,7 +164,7 @@
   .catalogue_list {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 47px;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       display: block;
       width: 100%;
       .item {
@@ -251,7 +251,7 @@
   }
   & + .btn {
     margin-top: 118px;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       margin-top: 40px;
     }
   }
@@ -265,7 +265,7 @@
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       padding-bottom: 0;
     }
 
@@ -347,12 +347,12 @@
     grid-row-gap: 85px;
     text-align: center;
     width: 100%;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       display: block;
     }
     .item {
       overflow: hidden;
-      @media (width < 680px) {
+      @media screen and (max-width: 680px) {
         margin-bottom: 78px;
       }
       a {
@@ -363,7 +363,7 @@
         font-size: 17px;
         line-height: 25px;
         min-height: 50px;
-        @media (width < 680px) {
+        @media screen and (max-width: 680px) {
           font-size: 15px;
           line-height: 22px;
           min-height: auto;
@@ -411,7 +411,7 @@
     gap: 65px;
     text-align: left;
     flex-wrap: wrap;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       justify-content: flex-start;
       font-size: 10px;
       line-height: 15px;
@@ -421,14 +421,14 @@
       display: flex;
       align-items: center;
       &:first-child {
-        @media (width < 680px) {
+        @media screen and (max-width: 680px) {
           width: 100%;
         }
       }
     }
     .title {
       white-space: nowrap;
-      @media (width < 680px) {
+      @media screen and (max-width: 680px) {
         width: 80px;
         flex-shrink: 0;
       }

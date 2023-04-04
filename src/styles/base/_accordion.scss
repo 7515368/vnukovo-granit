@@ -22,7 +22,7 @@
       line-height: 43px;
       gap: 10px;
       cursor: pointer;
-      @media (width < 680px) {
+      @media screen and (max-width: 680px) {
         font-size: 19px;
         line-height: 28px;
         align-items: flex-start;
@@ -39,7 +39,7 @@
         height: 11px;
         flex-shrink: 0;
         transition: all 0.35s;
-        @media (width < 680px) {
+        @media screen and (max-width: 680px) {
           margin-top: 10px;
         }
       }

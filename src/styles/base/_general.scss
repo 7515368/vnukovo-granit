@@ -24,7 +24,7 @@ h2 {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  @media (width < 680px) {
+  @media screen and (max-width: 680px) {
     font-size: 27px;
     line-height: 40px;
   }
@@ -37,7 +37,7 @@ h3 {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: $light-blue;
-  @media (width < 680px) {
+  @media screen and (max-width: 680px) {
     font-size: 16px;
     line-height: 24px;
     padding-left: 30px;
@@ -144,7 +144,7 @@ img {
   transition: all 0.3s ease;
   display: inline-block;
   height: 42px;
-  @media (width < 680px) {
+  @media screen and (max-width: 680px) {
     height: auto;
     border-radius: 32px;
   }
@@ -157,7 +157,7 @@ img {
     color: #ffffff;
     padding-left: 52px;
     padding-right: 49px;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       padding-left: 32px;
       padding-right: 29px;
     }
@@ -210,7 +210,7 @@ section {
     background: $light-blue;
   }
 }
-@media (width < 680px) {
+@media screen and (max-width: 680px) {
   ._hidden_mobile {
     display: none;
   }
@@ -219,7 +219,7 @@ section {
 .breadcrumbs {
   margin-top: -40px;
   margin-bottom: 25px;
-  @media (width < 680px) {
+  @media screen and (max-width: 680px) {
     display: none;
   }
   ul {

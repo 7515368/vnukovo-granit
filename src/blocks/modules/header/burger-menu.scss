@@ -1,5 +1,5 @@
 .burger-menu {
-  @media (width > 680px) {
+  @media screen and (min-width: 680px) {
     display: none;
   }
   &_button {
@@ -11,12 +11,9 @@
     border-radius: 50%;
     transition: 0.4s;
     display: none;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       position: absolute;
       display: block;
-    }
-    &:hover .burger-menu_lines {
-      // filter: brightness(0.7);
     }
   }
   &_lines {

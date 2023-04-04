@@ -9,7 +9,7 @@
     border: none;
     padding: 0 10px;
     outline: none;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       width: 100%;
       margin-bottom: 34px;
       height: 52px;
@@ -23,11 +23,11 @@
     grid-row-gap: 42px;
     margin-bottom: 73px;
     margin-top: 93px;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       margin-top: 22px;
       margin-bottom: 64px;
     }
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       display: block;
     }
   }
@@ -44,7 +44,7 @@
     border: none;
     padding: 10px;
     outline: none;
-    @media (width < 680px) {
+    @media screen and (max-width: 680px) {
       width: 100%;
     }
   }
