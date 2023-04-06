@@ -59,6 +59,9 @@ $opacity-transition: opacity 0.3s ease-in-out;
     z-index: 1;
     padding-top: 59px;
     padding-bottom: 106px;
+    @media screen and (max-width: 680px) {
+      transform: none;
+    }
   }
   form {
     ._inputs {
