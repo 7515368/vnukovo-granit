@@ -60,25 +60,24 @@
   &_nav {
     text-align: center;
     padding-top: 24px;
-    top: 0;
+    top: 73px;
     width: 100%;
     position: fixed;
     z-index: 20;
     display: flex;
     flex-flow: column;
     height: 100%;
-    background-color: #fff;
+    left: 0;
     overflow-y: auto;
-    left: -100%;
-    transition: 0.8s;
-    ul {
-      margin-top: 55px;
-    }
+    // left: -100%;
+    opacity: 0;
+    transition: 0.3s;
   }
   &_active {
     .burger-menu_nav {
-      left: 0;
-      transition: 0.4s;
+      opacity: 1;
+      // transition: 0.3s;
+      background-color: #fff;
     }
     .burger-menu_lines::before,
     .burger-menu_lines::after {
@@ -86,7 +85,7 @@
     }
     .burger-menu_overlay {
       display: block;
-      background-color: rgba($main-color, 0.5);
+      // background-color: rgba($main-color, 0.5);
     }
   }
   &_link {

@@ -43,6 +43,26 @@ $img-height: 260px;
         }
       }
     }
+    &.burger-menu_active {
+      background: #fff;
+      transition: 0.3s;
+      .header_logo {
+        svg {
+          use {
+            fill: $main-color;
+          }
+        }
+      }
+      .header_phone {
+        color: $main-color;
+        a {
+          color: $main-color;
+          &:hover {
+            color: $light-blue;
+          }
+        }
+      }
+    }
   }
 
   .burger-menu {

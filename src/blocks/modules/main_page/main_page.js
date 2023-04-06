@@ -1,6 +1,7 @@
 import $ from "jquery";
 // import "slick-carousel";
-import Swiper from 'swiper';
+import Swiper, { Navigation } from 'swiper';
+Swiper.use([Navigation]);
 
 // $('.hero_slider').slick({
 //     infinite: true,
@@ -20,28 +21,22 @@ import Swiper from 'swiper';
 // });
 
 var swiper = new Swiper(".hero_swiper", {
-    speed: 500,
+    speed: 800,
     slidesPerView: 1,
     autoHeight: true,
-    pagination: true,
-    // loop: true,
-    // noSwiping: true,
-    // noSwipingClass: 'no-swiping',
-    // autoplay: {
-    //     delay: 5000,
+    // fadeEffect: true,
+    loop: true,
+    // fadeEffect: {
+    //     crossFade: true
     // },
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true
-    },
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true
     },
     navigation: {
-        nextEl: '.hero_swiper .swiper-button-next',
-        prevEl: '.hero_swiper .swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 });
 
