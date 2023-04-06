@@ -79,17 +79,19 @@ input {
   margin: 0 auto;
   padding: 0 20px;
 }
-@media (width > 980px) {
+@media screen and (min-width: 980px) {
   .half-container {
     display: flex;
     max-width: 100%;
-    padding: 0;
+    padding: 0 20px;
   }
   .half-left {
-    width: 50%;
+    // width: 50%;
+    width: auto;
   }
   .half-right {
-    width: 50%;
+    // width: 50%;
+    width: 80%;
   }
   .left-container {
     max-width: 590px;
@@ -99,7 +101,7 @@ input {
   }
 }
 
-@media (width > 1200px) {
+@media screen and (min-width: 1200px) {
   .left-container {
     max-width: calc(var(--width) / 3);
     margin-left: calc(50% - 590px);

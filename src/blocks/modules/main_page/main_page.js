@@ -20,15 +20,16 @@ import Swiper from 'swiper';
 // });
 
 var swiper = new Swiper(".hero_swiper", {
-    speed: 1000,
+    speed: 500,
     slidesPerView: 1,
     autoHeight: true,
-    loop: true,
+    pagination: true,
+    // loop: true,
     // noSwiping: true,
     // noSwipingClass: 'no-swiping',
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     effect: 'fade',
     fadeEffect: {
         crossFade: true

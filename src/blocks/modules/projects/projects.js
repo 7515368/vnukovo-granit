@@ -14,10 +14,22 @@ $('.projects_slider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
-                dots: true,
+                dots: false,
             }
         },
 
     ]
 });
 
+$(".toggle_link").click(function () {
+    $('.projects_nav-tabs').slideToggle(300, function () {
+        if ($(this).is(':hidden')) {
+            $('.toggle_link').html('Показать фильтры');
+            $('.toggle_link').removeClass('open');
+        } else {
+            $('.toggle_link').html('Скрыть фильтры');
+            $('.toggle_link').addClass('open');
+        }
+    });
+    return false;
+});
