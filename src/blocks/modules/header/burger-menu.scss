@@ -60,7 +60,7 @@
   &_nav {
     text-align: center;
     padding-top: 24px;
-    top: 73px;
+
     width: 100%;
     position: fixed;
     z-index: 20;
@@ -68,16 +68,15 @@
     flex-flow: column;
     height: 100%;
     left: 0;
+    top: 73px;
     overflow-y: auto;
-    // left: -100%;
-    opacity: 0;
+    left: -100%;
     transition: 0.3s;
+    background-color: #fff;
   }
   &_active {
     .burger-menu_nav {
-      opacity: 1;
-      // transition: 0.3s;
-      background-color: #fff;
+      left: 0;
     }
     .burger-menu_lines::before,
     .burger-menu_lines::after {
