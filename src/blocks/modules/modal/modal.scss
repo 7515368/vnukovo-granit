@@ -17,7 +17,13 @@ $opacity-transition: opacity 0.3s ease-in-out;
   height: 42px;
   width: 42px;
   text-decoration: none;
-
+  @media screen and (max-width: 680px) {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
   svg {
     width: 42px;
     height: 42px;
@@ -62,6 +68,12 @@ $opacity-transition: opacity 0.3s ease-in-out;
       width: 100%;
       gap: 47px;
       margin-bottom: 73px;
+      @media screen and (max-width: 680px) {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 33px;
+      }
     }
 
     .btn {

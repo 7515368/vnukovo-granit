@@ -19,7 +19,7 @@
       li {
         padding: 9px 38px;
         background: $grey;
-        @media (width < 980px) {
+        @media screen and (max-width: 980px) {
           padding: 9px 18px;
         }
         @media screen and (max-width: 680px) {
@@ -57,7 +57,9 @@
     grid-column-gap: 47px;
     grid-row-gap: 85px;
     text-align: center;
-
+    @media screen and (max-width: 980px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     @media screen and (max-width: 680px) {
       display: flex;
       gap: 0;

@@ -8,6 +8,13 @@
     font-weight: 700;
     font-size: 29px;
     line-height: 43px;
+    @media screen and (max-width: 680px) {
+      font-size: 21px;
+      line-height: 31px;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
   input[type="text"] {
     border: none;

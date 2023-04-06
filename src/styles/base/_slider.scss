@@ -23,7 +23,7 @@
   &:before {
     font-family: sans-serif;
     content: "";
-    background: url(../img/sprites/icon-arrow.svg) no-repeat;
+    background: url(../img/sprites/icon-arrow_b.svg) no-repeat;
     background-size: contain;
     width: 16px;
     height: 16px;
@@ -64,4 +64,37 @@
 .slick-dots li button:before,
 .slick-dots li.slick-active button:before {
   color: transparent;
+}
+
+.swiper-button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  transition: all 0.2s ease;
+  svg {
+    width: 16px;
+    height: 16px;
+    use {
+      fill: $light-blue;
+    }
+  }
+  &::after {
+    display: none;
+  }
+  &:hover {
+    background: $light-blue;
+    svg {
+      use {
+        fill: #fff;
+      }
+    }
+  }
+  &-prev {
+    transform: rotate(180deg);
+  }
 }

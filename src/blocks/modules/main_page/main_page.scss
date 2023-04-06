@@ -70,6 +70,8 @@ $img-height: 260px;
       // margin-bottom: 70px !important;
       @media screen and (max-width: 680px) {
         margin-bottom: 64px;
+        padding-left: 30px;
+        padding-right: 30px;
       }
       .slick-dots {
         bottom: 0;
