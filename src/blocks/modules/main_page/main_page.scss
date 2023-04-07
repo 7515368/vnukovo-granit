@@ -100,22 +100,39 @@ $img-height: 260px;
       height: auto;
       padding-top: 190px;
       padding-bottom: 64px;
-      margin-bottom: 60px;
+      margin-bottom: 30px;
     }
-    &_slider {
+
+    .swiper {
       color: #fff;
-      // margin-bottom: 70px !important;
       @media screen and (max-width: 680px) {
-        margin-bottom: 64px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-bottom: 34px;
+        // padding-left: 20px;
+        // padding-right: 20px;
       }
-      .slick-dots {
-        bottom: 0;
-        li {
+      &-wrapper {
+        padding-bottom: 70px;
+        @media screen and (max-width: 680px) {
+          padding-bottom: 0px;
+        }
+      }
+      &-button {
+        top: 30%;
+        @media screen and (max-width: 680px) {
+          display: none;
+        }
+      }
+
+      &-pagination {
+        bottom: 60px;
+        @media screen and (max-width: 680px) {
+          bottom: 10px;
+        }
+        &-bullet {
           background: #fff;
-          &.slick-active,
-          &:hover {
+          margin: 0 10px;
+          opacity: 1;
+          &-active {
             background: $light-blue;
           }
         }

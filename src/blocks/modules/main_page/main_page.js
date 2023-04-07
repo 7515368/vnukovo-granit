@@ -1,34 +1,14 @@
 import $ from "jquery";
-// import "slick-carousel";
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation]);
+Swiper.use([Pagination]);
 
-// $('.hero_slider').slick({
-//     infinite: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     dots: true,
-//     responsive: [
-
-//         {
-//             breakpoint: 680,
-//             settings: {
-//                 arrows: false
-//             }
-//         },
-
-//     ]
-// });
 
 var swiper = new Swiper(".hero_swiper", {
     speed: 800,
     slidesPerView: 1,
     autoHeight: true,
-    // fadeEffect: true,
     loop: true,
-    // fadeEffect: {
-    //     crossFade: true
-    // },
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -37,6 +17,17 @@ var swiper = new Swiper(".hero_swiper", {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    // navigation: {
+    //     enabled: false,
+    //     hiddenClass: 'swiper-button-hidden',
+    // },
+
+    breakpoints: {
+        640: {
+            navigation: false,
+        },
+
     },
 });
 
