@@ -18,16 +18,5 @@ var swiper = new Swiper(".hero_swiper", {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    // navigation: {
-    //     enabled: false,
-    //     hiddenClass: 'swiper-button-hidden',
-    // },
-
-    breakpoints: {
-        640: {
-            navigation: false,
-        },
-
-    },
 });
 

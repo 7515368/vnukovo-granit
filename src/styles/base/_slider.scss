@@ -66,35 +66,57 @@
   color: transparent;
 }
 
-.swiper-button {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0;
-  transition: all 0.2s ease;
-  svg {
-    width: 16px;
-    height: 16px;
-    use {
-      fill: $light-blue;
-    }
+.slick-slide {
+  img {
+    margin: auto;
   }
-  &::after {
-    display: none;
-  }
-  &:hover {
-    background: $light-blue;
-    svg {
-      use {
-        fill: #fff;
+}
+.swiper {
+  &-pagination {
+    &-bullet {
+      background: $main-color;
+      margin: 0 10px;
+      opacity: 1;
+      &-active {
+        background: $light-blue;
       }
     }
   }
-  &-prev {
-    transform: rotate(180deg);
+
+  &-button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    transition: all 0.2s ease;
+    svg {
+      width: 16px;
+      height: 16px;
+      use {
+        fill: $light-blue;
+      }
+    }
+    &::after {
+      display: none;
+    }
+    &:hover {
+      background: $light-blue;
+      svg {
+        use {
+          fill: #fff;
+        }
+      }
+    }
+    &-prev {
+      transform: rotate(180deg);
+      left: 0;
+    }
+    &-next {
+      right: 0;
+    }
   }
 }

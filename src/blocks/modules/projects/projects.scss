@@ -2,6 +2,27 @@
   @media screen and (max-width: 680px) {
     display: flex;
     flex-direction: column;
+    margin-top: 22px;
+  }
+  .swiper {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    @media screen and (min-width: $container) {
+      margin-left: -21px;
+      margin-right: -21px;
+      padding-left: 21px;
+      padding-right: 21px;
+    }
+
+    &-wrapper {
+      padding-bottom: 60px;
+    }
+    &-button {
+      top: calc($img-height / 2);
+      @media screen and (max-width: 680px) {
+        display: none;
+      }
+    }
   }
   &_slider {
     @media screen and (min-width: 1220px) {
@@ -57,8 +78,10 @@
     }
   }
   .item {
-    // padding: 0 23px;
     overflow: hidden;
+    img {
+      width: 100%;
+    }
     a {
       color: $main-color;
     }
@@ -130,6 +153,7 @@
     }
     .img_slider {
       width: 100%;
+
       .slick-dots {
         bottom: 17px;
         li {
@@ -228,40 +252,6 @@
     }
   }
 
-  .toggle_link {
-    color: $main-color;
-    font-size: 12px;
-    line-height: 18px;
-    border-top: 1px solid #ebebec;
-    border-bottom: 1px solid #ebebec;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    margin-bottom: 33px;
-    position: relative;
-    display: none;
-    &::after {
-      content: "";
-      display: block;
-      width: 12px;
-      height: 6px;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background: url(../img/sprites/arrow-down.svg) 100% 50% no-repeat;
-      background-size: contain;
-      transition: all 0.2s;
-    }
-    &.open {
-      &::after {
-        transform: rotate(-180deg) translateY(50%);
-      }
-    }
-
-    @media screen and (max-width: 680px) {
-      display: block;
-    }
-  }
   @media screen and (max-width: 680px) {
     .text_block {
       order: 2;
@@ -283,11 +273,6 @@
     }
   }
   &_content {
-    // display: grid;
-    // grid-template-columns: 2fr 1fr;
-    // grid-template-rows: 1fr;
-
-    // grid-row-gap: 0px;
     text-align: left;
     margin-top: 55px;
     grid-column-gap: 46px;
@@ -377,6 +362,9 @@
       .inner {
         width: fit-content;
         text-align: center;
+        @media screen and (max-width: 680px) {
+          width: 100%;
+        }
         a {
           color: #fff;
         }

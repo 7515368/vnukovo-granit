@@ -1,7 +1,3 @@
-:root {
-  --width: 1180px;
-}
-
 h1,
 h2,
 h3,
@@ -74,7 +70,7 @@ input {
 }
 .container {
   width: 100%;
-  max-width: var(--width);
+  max-width: $container;
   min-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
@@ -103,7 +99,7 @@ input {
 
 @media screen and (min-width: 1200px) {
   .left-container {
-    max-width: calc(var(--width) / 3);
+    max-width: calc($container / 3);
     margin-left: calc(50% - 590px);
   }
   .half-left {

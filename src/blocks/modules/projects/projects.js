@@ -1,5 +1,45 @@
 import $ from "jquery";
 import "slick-carousel";
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation]);
+Swiper.use([Pagination]);
+
+
+var swiper = new Swiper(".projects_swiper", {
+    speed: 800,
+
+    autoHeight: true,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        360: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+
+        },
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+
+        },
+
+        680: {
+            slidesPerView: 3,
+            spaceBetween: 46,
+
+        },
+    }
+
+});
+
 
 $('.projects_slider').slick({
     // infinite: true,
@@ -21,15 +61,3 @@ $('.projects_slider').slick({
     ]
 });
 
-$(".toggle_link").click(function () {
-    $('.projects_nav-tabs').slideToggle(300, function () {
-        if ($(this).is(':hidden')) {
-            $('.toggle_link').html('Показать фильтры');
-            $('.toggle_link').removeClass('open');
-        } else {
-            $('.toggle_link').html('Скрыть фильтры');
-            $('.toggle_link').addClass('open');
-        }
-    });
-    return false;
-});

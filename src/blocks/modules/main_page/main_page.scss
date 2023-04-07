@@ -1,5 +1,3 @@
-$img-height: 260px;
-
 .main_page {
   text-align: center;
   .header {
@@ -94,7 +92,7 @@ $img-height: 260px;
     background-size: cover;
     height: 740px;
     padding-top: 285px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     margin-top: 0;
     @media screen and (max-width: 680px) {
       height: auto;
@@ -107,8 +105,6 @@ $img-height: 260px;
       color: #fff;
       @media screen and (max-width: 680px) {
         margin-bottom: 34px;
-        // padding-left: 20px;
-        // padding-right: 20px;
       }
       &-wrapper {
         padding-bottom: 70px;
