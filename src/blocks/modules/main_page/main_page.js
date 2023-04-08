@@ -1,14 +1,9 @@
-import $ from "jquery";
 import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation]);
-Swiper.use([Pagination]);
 
-
-var swiper = new Swiper(".hero_swiper", {
-    speed: 800,
-    slidesPerView: 1,
-    autoHeight: true,
-    loop: true,
+new Swiper(".hero_swiper", {
+    slidesPerView: 'auto',
+    simulateTouch: true,
+    modules: [Navigation, Pagination],
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
