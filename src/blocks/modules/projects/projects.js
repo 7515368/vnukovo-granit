@@ -5,14 +5,11 @@ Swiper.use([Navigation]);
 Swiper.use([Pagination]);
 
 
-var swiper = new Swiper(".projects_swiper", {
+new Swiper(".projects_swiper", {
     speed: 800,
-
     autoHeight: true,
-    loop: true,
     pagination: {
         el: '.swiper-pagination',
-        type: 'bullets',
         clickable: true
     },
     navigation: {
@@ -35,29 +32,10 @@ var swiper = new Swiper(".projects_swiper", {
             slidesPerView: 3,
             spaceBetween: 46,
 
+
         },
     }
 
 });
 
-
-$('.projects_slider').slick({
-    // infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: false,
-    responsive: [
-
-        {
-            breakpoint: 680,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                dots: false,
-            }
-        },
-
-    ]
-});
 

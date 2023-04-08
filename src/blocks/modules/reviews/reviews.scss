@@ -49,6 +49,7 @@
     padding: 32px 41px;
     text-align: left;
     color: $main-color;
+
     .date {
       color: $light-blue;
       margin-top: 14px;
@@ -102,5 +103,33 @@
     left: 50%;
     transform: translate(-50%, 90px);
     min-width: 290px;
+  }
+
+  .swiper {
+    padding-bottom: 100px;
+
+    &-pagination {
+      transform: translateX(-30px);
+      bottom: 0px;
+      width: 50%;
+      &-bullet {
+        background: #fff;
+        &-active,
+        &:hover {
+          background: $light-blue;
+        }
+      }
+    }
+    &-button {
+      bottom: 0px;
+      top: auto;
+      &-next {
+        left: calc(55% + 80px);
+      }
+      &-prev {
+        left: auto;
+        left: 55%;
+      }
+    }
   }
 }

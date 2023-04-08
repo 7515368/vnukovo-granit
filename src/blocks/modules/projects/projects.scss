@@ -4,7 +4,7 @@
     flex-direction: column;
     margin-top: 22px;
   }
-  .swiper {
+  &_swiper {
     margin-top: 55px;
     margin-bottom: 50px;
     @media screen and (min-width: $container) {
@@ -14,57 +14,17 @@
       padding-right: 21px;
     }
 
-    &-wrapper {
+    .swiper-wrapper {
       padding-bottom: 60px;
     }
-    &-button {
+    .swiper-button {
       top: calc($img-height / 2);
       @media screen and (max-width: 680px) {
         display: none;
       }
     }
   }
-  &_slider {
-    @media screen and (min-width: 1220px) {
-      margin-left: -23px;
-      margin-right: -23px;
-    }
-    margin-top: 55px;
-    margin-bottom: 50px !important;
-    .slick-prev,
-    .slick-next {
-      top: calc($img-height / 2);
-      transform: translateY(-50%);
-    }
-    .slick-next {
-      right: 5px;
-    }
-    .slick-prev {
-      left: 5px;
-    }
 
-    .slick-dots {
-      bottom: -40px;
-    }
-    .item {
-      a {
-        color: $main-color;
-      }
-      .link_more {
-        color: $light-blue;
-        margin-top: 30px;
-        &:hover {
-          color: #fff;
-        }
-      }
-      &:hover {
-        .link_more {
-          background: $light-blue;
-          color: #fff;
-        }
-      }
-    }
-  }
   &_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
