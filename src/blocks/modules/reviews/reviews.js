@@ -1,5 +1,6 @@
-import $ from "jquery";
+
 import Swiper, { Navigation, Pagination } from 'swiper';
+
 new Swiper(".reviews_swiper", {
     slidesPerView: 2,
     simulateTouch: true,
@@ -34,22 +35,3 @@ new Swiper(".reviews_swiper", {
         },
     }
 });
-
-// $('.reviews_slider').slick({
-//     // infinite: true,
-//     slidesToShow: 2,
-//     slidesToScroll: 2,
-//     dots: true,
-//     responsive: [
-
-//         {
-//             breakpoint: 680,
-//             settings: {
-//                 slidesToShow: 1,
-//                 slidesToScroll: 1,
-//                 arrows: false
-//             }
-//         },
-
-//     ]
-// });

@@ -18,7 +18,6 @@ $('.img_slider').slick({
     arrows: false,
 });
 
-
 $('.select').on('click', '.select__head', function () {
     if ($(this).hasClass('open')) {
         $(this).removeClass('open');

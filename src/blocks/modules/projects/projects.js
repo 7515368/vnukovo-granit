@@ -1,13 +1,13 @@
 import $ from "jquery";
 import "slick-carousel";
 import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation]);
-Swiper.use([Pagination]);
+
 
 
 new Swiper(".projects_swiper", {
     speed: 800,
     autoHeight: true,
+    simulateTouch: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true
