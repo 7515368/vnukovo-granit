@@ -4,10 +4,6 @@ new Swiper(".hero_swiper", {
     slidesPerView: 'auto',
     simulateTouch: true,
     modules: [Navigation, Pagination],
-
-    scrollbar: {
-        draggable: true,
-    },
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',

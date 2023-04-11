@@ -87,8 +87,24 @@
     <section class="page-section">
         <div class="container">
             <h2>Другие работы</h2>
-            <div class="slider projects_slider similar_projects">
-                @@include("../blocks/modules/projects/similar_projects.html")
+            <div class="slider similar_projects swiper similar_swiper">
+                <div class="swiper-wrapper">
+                    @@include("../blocks/modules/projects/similar_projects.html")
+                </div>
+
+                <div class="swiper-button swiper-button-prev">
+                    <svg class="icon" width="28" height="28" viewBox="0 0 28 28">
+                        <use xlink:href="img/sprites/sprite.svg#icon-arrow"></use>
+                    </svg>
+                </div>
+                <div class="swiper-button swiper-button-next">
+                    <svg class="icon" width="28" height="28" viewBox="0 0 28 28">
+                        <use xlink:href="img/sprites/sprite.svg#icon-arrow"></use>
+                    </svg>
+                </div>
+
+
+
             </div>
         </div>
     </section>

@@ -452,7 +452,12 @@
   }
 }
 .similar_projects {
-  margin-bottom: 127px !important;
+  margin-bottom: 127px;
+  margin-top: 52px;
+  @media screen and (max-width: 680px) {
+    margin-bottom: 52px;
+  }
+
   .item {
     text-align: center;
     @media screen and (max-width: 680px) {
