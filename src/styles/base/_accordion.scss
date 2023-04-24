@@ -123,6 +123,12 @@
       font-weight: 700;
       font-size: 29px;
       line-height: 43px;
+      color: $main-color;
+      @media screen and (max-width: 680px) {
+                font-size: 19px;
+                line-height: 28px;
+                align-items: flex-start;
+              }
     }
     .icon {
       display: inline-block;
@@ -183,9 +189,9 @@
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
     p {
-      font-size: 1rem;
-      font-weight: 300;
-      margin: 2em 0;
+      // font-size: 1rem;
+      // font-weight: 300;
+      // margin: 2em 0;
     }
   }
 }

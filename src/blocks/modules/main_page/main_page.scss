@@ -307,26 +307,28 @@
       padding: 0;
     }
     &_swiper {
-      margin-right: -21px;
       margin-left: -21px;
+      margin-right: -21px;
+      padding-left: 21px;
+      padding-right: 21px;
       .swiper-wrapper {
         a {
           color: $main-color;
         }
       }
       .swiper-slide {
-        width: calc((100% / 3) - 46px);
-        margin-right: 21px;
-        margin-left: 21px;
+        width: calc((100% / 3) - (46px * 2) / 3);
+        margin-right: 46px;
+        
         &:last-child {
-          // margin-right: 0;
+          margin-right: 0;
         }
       }
     }
 
     @media screen and (max-width: 680px) {
       &_swiper {
-        padding-left: 20px;
+        padding-left: 41px;
         .swiper-wrapper {
           padding: 0;
         }
@@ -348,7 +350,6 @@
     &_slider {
       .item {
         margin-bottom: 0px;
-        padding: 0 20px;
 
         img {
           height: $img-height;
