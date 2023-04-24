@@ -4,6 +4,7 @@
   margin-bottom: 87px;
   overflow: hidden;
   margin-top: 50px;
+
   @media screen and (max-width: 680px) {
     margin-top: 0;
     margin-bottom: 79px;
@@ -15,7 +16,7 @@
   }
   .tab {
     width: 100%;
-    // margin-bottom: 5px;
+    margin-bottom: 5px;
     overflow: hidden;
     &-label {
       display: flex;
@@ -25,6 +26,7 @@
       font-size: 29px;
       line-height: 43px;
       gap: 10px;
+
       cursor: pointer;
       @media screen and (max-width: 680px) {
         font-size: 19px;
@@ -49,15 +51,16 @@
       }
     }
     &-content {
-      opacity: 0;
+      // opacity: 0;
       text-align: left;
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
       transition: all 0.3s ease-in-out;
       overflow: hidden;
-      max-height: 0;
+      // max-height: 0;
       padding: 0 0 35px 0;
+      display: none;
     }
     &-close {
       display: flex;
@@ -80,8 +83,9 @@
       }
     }
     ~ .tab-content {
-      opacity: 1;
-      max-height: fit-content;
+      // opacity: 1;
+      // max-height: fit-content;
+      display: block;
     }
   }
 }

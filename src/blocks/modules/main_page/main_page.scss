@@ -184,6 +184,7 @@
       z-index: 1;
       background: #fff;
       position: absolute;
+      top: -1px;
     }
     @media screen and (max-width: 680px) {
       background-size: cover;
@@ -302,10 +303,50 @@
     }
   }
   .projects {
+    .container {
+      padding: 0;
+    }
+    &_swiper {
+      .swiper-wrapper {
+        a {
+          color: $main-color;
+        }
+      }
+      .swiper-slide {
+        width: calc((100% / 3) - 46px);
+        margin-right: 46px;
+        &:last-child {
+          // margin-right: 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 680px) {
+      &_swiper {
+        padding-left: 20px;
+        .swiper-wrapper {
+          padding: 0;
+        }
+        .item {
+          margin-bottom: 0;
+        }
+        .swiper-slide {
+          width: 75vw;
+          margin-right: 30px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .swiper-pagination {
+        display: none;
+      }
+    }
     &_slider {
       .item {
         margin-bottom: 0px;
         padding: 0 20px;
+
         img {
           height: $img-height;
           margin: auto;
