@@ -1,103 +1,111 @@
-.tabs {
+// .tabs {
+//   border-top: 1px solid #ebebec;
+//   padding-top: 30px;
+//   margin-bottom: 87px;
+//   overflow: hidden;
+//   margin-top: 50px;
+
+//   @media screen and (max-width: 680px) {
+//     margin-top: 0;
+//     margin-bottom: 79px;
+//   }
+//   input {
+//     position: absolute;
+//     opacity: 0;
+//     z-index: -1;
+//   }
+//   .tab {
+//     width: 100%;
+//     margin-bottom: 5px;
+//     overflow: hidden;
+//     &-label {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       font-weight: 700;
+//       font-size: 29px;
+//       line-height: 43px;
+//       gap: 10px;
+
+//       cursor: pointer;
+//       @media screen and (max-width: 680px) {
+//         font-size: 19px;
+//         line-height: 28px;
+//         align-items: flex-start;
+//       }
+
+//       /* Icon */
+//       &:hover {
+//       }
+//       &::after {
+//         content: "";
+//         background: url(../img/sprites/arrow-down.svg) 0 50% no-repeat;
+//         background-size: contain;
+//         width: 12px;
+//         height: 11px;
+//         flex-shrink: 0;
+//         transition: all 0.35s;
+//         @media screen and (max-width: 680px) {
+//           margin-top: 10px;
+//         }
+//       }
+//     }
+//     &-content {
+//       // opacity: 0;
+//       text-align: left;
+//       font-weight: 400;
+//       font-size: 16px;
+//       line-height: 24px;
+//       transition: all 0.3s ease-in-out;
+//       overflow: hidden;
+//       // max-height: 0;
+//       padding: 0 0 35px 0;
+//       display: none;
+//     }
+//     &-close {
+//       display: flex;
+//       justify-content: flex-end;
+//       padding: 1em;
+//       font-size: 0.75em;
+//       cursor: pointer;
+//       &:hover {
+//       }
+//     }
+//   }
+
+//   // :checked
+//   input:checked {
+//     + .tab-label {
+//       &::after {
+//         background: url(../img/sprites/arrow-down-active.svg) 0 50% no-repeat;
+//         background-size: contain;
+//         transform: rotate(180deg);
+//       }
+//     }
+//     ~ .tab-content {
+//       // opacity: 1;
+//       // max-height: fit-content;
+//       display: block;
+//     }
+//   }
+// }
+
+.accordion {
   border-top: 1px solid #ebebec;
   padding-top: 30px;
   margin-bottom: 87px;
   overflow: hidden;
   margin-top: 50px;
-
   @media screen and (max-width: 680px) {
     margin-top: 0;
     margin-bottom: 79px;
   }
-  input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
-  .tab {
-    width: 100%;
-    margin-bottom: 5px;
-    overflow: hidden;
-    &-label {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-weight: 700;
-      font-size: 29px;
-      line-height: 43px;
-      gap: 10px;
-
-      cursor: pointer;
-      @media screen and (max-width: 680px) {
-        font-size: 19px;
-        line-height: 28px;
-        align-items: flex-start;
-      }
-
-      /* Icon */
-      &:hover {
-      }
-      &::after {
-        content: "";
-        background: url(../img/sprites/arrow-down.svg) 0 50% no-repeat;
-        background-size: contain;
-        width: 12px;
-        height: 11px;
-        flex-shrink: 0;
-        transition: all 0.35s;
-        @media screen and (max-width: 680px) {
-          margin-top: 10px;
-        }
-      }
-    }
-    &-content {
-      // opacity: 0;
-      text-align: left;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      transition: all 0.3s ease-in-out;
-      overflow: hidden;
-      // max-height: 0;
-      padding: 0 0 35px 0;
-      display: none;
-    }
-    &-close {
-      display: flex;
-      justify-content: flex-end;
-      padding: 1em;
-      font-size: 0.75em;
-      cursor: pointer;
-      &:hover {
-      }
-    }
-  }
-
-  // :checked
-  input:checked {
-    + .tab-label {
-      &::after {
-        background: url(../img/sprites/arrow-down-active.svg) 0 50% no-repeat;
-        background-size: contain;
-        transform: rotate(180deg);
-      }
-    }
-    ~ .tab-content {
-      // opacity: 1;
-      // max-height: fit-content;
-      display: block;
-    }
-  }
-}
-
-.accordion {
   button {
     position: relative;
     display: block;
     text-align: left;
     width: 100%;
     padding: 1em 0;
-
     font-size: 1.15rem;
     font-weight: 400;
     border: none;
@@ -112,25 +120,31 @@
       }
     }
     .accordion-title {
-      padding: 1em 1.5em 1em 0;
+      font-weight: 700;
+      font-size: 29px;
+      line-height: 43px;
     }
     .icon {
       display: inline-block;
       position: absolute;
       top: 18px;
       right: 0;
-      width: 22px;
-      height: 22px;
-      border: 1px solid;
+      width: 12px;
+      height: 12px;
+      // border: 1px solid;
       border-radius: 22px;
       &::before {
-        display: block;
-        position: absolute;
         content: "";
-        top: 9px;
-        left: 5px;
-        width: 10px;
-        height: 2px;
+        display: block;
+        background: url(../img/sprites/arrow-down.svg) 0 50% no-repeat;
+        background-size: contain;
+        width: 12px;
+        height: 11px;
+        margin-top: 20px;
+        transition: all 0.35s;
+        @media screen and (max-width: 680px) {
+          margin-top: 10px;
+        }
       }
       &::after {
         display: block;
@@ -144,8 +158,13 @@
     }
   }
   button[aria-expanded="true"] {
-    color: $blue;
+  
     .icon {
+      &:before {
+        background: url(../img/sprites/arrow-down-active.svg) 0 50% no-repeat;
+        background-size: contain;
+        transform: rotate(180deg);
+      }
       &::after {
         width: 0;
       }
