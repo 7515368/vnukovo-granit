@@ -307,6 +307,8 @@
       padding: 0;
     }
     &_swiper {
+      margin-right: -21px;
+      margin-left: -21px;
       .swiper-wrapper {
         a {
           color: $main-color;
@@ -314,7 +316,8 @@
       }
       .swiper-slide {
         width: calc((100% / 3) - 46px);
-        margin-right: 46px;
+        margin-right: 21px;
+        margin-left: 21px;
         &:last-child {
           // margin-right: 0;
         }
