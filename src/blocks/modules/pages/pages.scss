@@ -34,7 +34,7 @@
       }
       img {
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
         height: 40vh;
         margin: auto;
         @media screen and (max-width: 680px) {
@@ -52,9 +52,9 @@
         img {
           aspect-ratio: 5 / 3;
           -o-object-position: 30%;
-             object-position: 30%;
+          object-position: 30%;
           -o-object-fit: cover;
-             object-fit: cover;
+          object-fit: cover;
         }
       }
     }
@@ -296,7 +296,7 @@
     * {
       height: 100%;
       -o-object-fit: cover;
-         object-fit: cover;
+      object-fit: cover;
     }
   }
 }
@@ -471,6 +471,9 @@
     @media screen and (max-width: 680px) {
       font-size: 12px;
       line-height: 18px;
+      .img_slider {
+        margin-bottom: 0;
+      }
     }
     a {
       color: $main-color;
@@ -495,6 +498,10 @@
       line-height: 25px;
       min-height: 50px;
       margin-top: 17px;
+      @media screen and (max-width: 680px) {
+        min-height: auto;
+        margin-top: 12px;
+      }
     }
     .rate {
       display: none;
@@ -506,6 +513,10 @@
       font-size: 16px;
       line-height: 24px;
       margin-top: 20px;
+      @media screen and (max-width: 680px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
     }
     .price {
       font-size: 30px;
@@ -521,8 +532,10 @@
       margin-top: 30px;
     }
   }
+
   .img_slider {
     width: 100%;
+
     .slick-dots {
       bottom: 17px;
       li {
@@ -560,6 +573,9 @@
       &:last-child {
         margin-right: 0;
       }
+    }
+    .swiper-button {
+      display: none;
     }
   }
   .swiper-pagination {

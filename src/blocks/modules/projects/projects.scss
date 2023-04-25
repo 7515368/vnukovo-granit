@@ -255,6 +255,16 @@
         order: 2;
         margin-bottom: 60px;
       }
+      .slick-slide {
+        img {
+          object-fit: cover;
+          height: 40vh;
+          margin: auto;
+          width: fit-content !important;
+          max-width: 100% !important;
+        }
+      }
+
       .slick-dots {
         bottom: 17px;
         li {
