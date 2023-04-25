@@ -319,7 +319,7 @@
       .swiper-slide {
         width: calc((100% / 3) - (46px * 2) / 3);
         margin-right: 46px;
-        
+
         &:last-child {
           margin-right: 0;
         }
@@ -355,6 +355,65 @@
           height: $img-height;
           margin: auto;
         }
+      }
+    }
+  }
+
+  .advantages {
+    margin-bottom: 109px;
+    h3 {
+      max-width: 1100px;
+      margin: auto;
+    }
+    @media screen and (max-width: 680px) {
+      margin-bottom: 63px;
+    }
+    &_list {
+      margin-top: 59px;
+      display: flex;
+      @media screen and (max-width: 680px) {
+        flex-direction: column;
+      }
+      .item {
+        width: calc(100% / 3);
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 30px;
+        position: relative;
+        @media screen and (max-width: 680px) {
+          margin-bottom: 65px;
+          width: 100%;
+        }
+        &::before {
+          content: "";
+          display: block;
+          width: 81px;
+          height: 2px;
+          background: $light-blue;
+          margin: 0 auto 31px;
+        }
+      }
+    }
+    &_title {
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-top: 79px;
+
+      @media screen and (max-width: 680px) {
+        font-size: 15px;
+        margin-top: 10px;
+      }
+    }
+    &_subtitle {
+      margin-top: 47px;
+      font-size: 16px;
+      line-height: 24px;
+      @media screen and (max-width: 680px) {
+        margin-top: 49px;
+        font-size: 12px;
+        line-height: 18px;
       }
     }
   }
