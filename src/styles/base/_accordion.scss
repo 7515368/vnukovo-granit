@@ -34,6 +34,8 @@
       font-size: 29px;
       line-height: 43px;
       color: $main-color;
+      max-width: 90%;
+      display: block;
       @media screen and (max-width: 680px) {
         font-size: 19px;
         line-height: 28px;
@@ -86,7 +88,7 @@
     }
     + .accordion-content {
       opacity: 1;
-      max-height: 9em;
+      max-height: 30em;
       transition: all 200ms linear;
       will-change: opacity, max-height;
     }
@@ -97,5 +99,31 @@
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
+    p {
+      font-size: 1.1em;
+      line-height: 1.4;
+      margin-bottom: 5px;
+    }
+    ul {
+      margin-bottom: 20px;
+      font-size: 1.1em;
+      line-height: 1.4;
+      list-style: none;
+      margin-left: 0;
+      li {
+        margin-left: 0px;
+        position: relative;
+        padding-left: 0px;
+        &:before {
+          content: "";
+          display: inline-block;
+          border-radius: 50%;
+          background: $light-blue;
+          height: 10px;
+          width: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
   }
 }
