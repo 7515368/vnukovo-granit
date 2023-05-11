@@ -260,13 +260,16 @@
       }
       .slick-slide {
         img {
-          object-fit: cover;
+          // object-fit: cover;
           // height: 40vh;
-          height: 100%;
+          // height: 100%;
+          // width: auto;
+          // margin: auto;
+          // width: fit-content !important;
+          object-fit: scale-down;
+          height: 500px;
           width: auto;
           margin: auto;
-          // width: fit-content !important;
-
           max-width: 100% !important;
         }
       }
@@ -316,7 +319,8 @@
       }
     }
   }
-  &_about {
+
+  &_review {
     background: $blue;
     color: #fff;
     padding-top: 76px;
@@ -325,6 +329,11 @@
       margin-top: 0;
       padding-top: 59px;
       padding-bottom: 98px;
+    }
+  }
+  &_about {
+    @media screen and (max-width: 680px) {
+      margin-bottom: 105px;
     }
     &-content {
       display: grid;
@@ -340,7 +349,7 @@
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
-        text-align: center;
+        // text-align: center;
         @media screen and (max-width: 680px) {
           width: 100%;
         }
@@ -365,11 +374,11 @@
       }
       .head {
         font-weight: 700;
-        font-size: 17px;
-        line-height: 25px;
-        margin-bottom: 64px;
-        text-align: left;
-        margin-top: 13px;
+        font-size: 19px;
+        line-height: 28px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        margin-bottom: 58px;
         @media screen and (max-width: 680px) {
           text-align: center;
           font-size: 15px;
@@ -378,23 +387,30 @@
         }
       }
       .title {
-        text-align: center;
+        // text-align: center;
         font-weight: 700;
         font-size: 17px;
         line-height: 25px;
         margin-top: 24px;
         margin-bottom: 17px;
       }
+      .link_more {
+        padding: 0;
+        &:hover {
+          background: none;
+          color: $light-blue;
+        }
+      }
     }
     &-review {
-      @media screen and (max-width: 680px) {
-        margin-top: 105px;
-      }
+      text-align: center;
+
       h4 {
         font-weight: 700;
-        font-size: 29px;
-        line-height: 43px;
-        margin-bottom: 46px;
+        font-size: 38px;
+        line-height: 56px;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
         @media screen and (max-width: 680px) {
           font-size: 21px;
           line-height: 31px;
@@ -404,9 +420,16 @@
         margin-top: 0;
         padding-top: 0;
         padding-bottom: 0;
-        margin-bottom: 72px;
+        margin-bottom: 22px;
         .item {
-          height: 272px;
+          text-align: center;
+          color: #fff;
+          // height: 272px;
+          background: none;
+          .content {
+            max-width: 500px;
+            margin: 34px auto 0;
+          }
         }
       }
     }
