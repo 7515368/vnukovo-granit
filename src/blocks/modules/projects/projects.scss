@@ -367,8 +367,9 @@
         }
         &:hover {
           .link_more {
-            background: $light-blue;
-            color: #fff;
+            color: lighten($light-blue, 10);
+            // background: $light-blue;
+            // color: #fff;
           }
         }
       }
