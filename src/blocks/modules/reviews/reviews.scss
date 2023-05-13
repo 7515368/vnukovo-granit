@@ -107,7 +107,20 @@
 
   .swiper {
     padding-bottom: 100px;
-
+    &-slide {
+      height: auto !important;
+    }
+    &-controls {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      .pages {
+        color: #fff;
+        position: absolute;
+        left: 75%;
+        top: -31px;
+      }
+    }
     &-pagination {
       transform: translateX(-30px);
       bottom: 0px;
@@ -123,12 +136,16 @@
     &-button {
       bottom: 0px;
       top: auto;
+      left: 50%;
+
       &-next {
-        left: calc(55% + 80px);
+        margin-left: 40px;
+        transform: translateX(-50%);
+        // left: calc(50% + 80px);
       }
       &-prev {
-        left: auto;
-        left: 55%;
+        margin-left: -40px;
+        transform: translateX(-50%) rotate(-180deg);
       }
     }
   }
