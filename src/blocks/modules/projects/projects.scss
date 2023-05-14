@@ -24,6 +24,7 @@
         display: none;
       }
     }
+
   }
 
   &_list {
@@ -252,21 +253,23 @@
     }
     &-gallery {
       grid-area: 1 / 1 / 4 / 2;
-      margin-bottom: 0;
+      margin-bottom: 0 !important;
       overflow: hidden;
       @media screen and (max-width: 680px) {
         order: 2;
-        margin-bottom: 60px;
+        margin-bottom: 60px !important;
       }
       .slick-slide {
         img {
-          // object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           // height: 40vh;
           // height: 100%;
           // width: auto;
           // margin: auto;
           // width: fit-content !important;
-          object-fit: scale-down;
+          // -o-object-fit: scale-down;
+          //    object-fit: scale-down;
           height: 500px;
           width: auto;
           margin: auto;
