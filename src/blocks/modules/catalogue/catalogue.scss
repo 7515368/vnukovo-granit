@@ -65,6 +65,12 @@
       display: flex;
       gap: 0;
     }
+    .img {
+      img {
+        aspect-ratio: 3/4.5;
+        object-fit: scale-down;
+      }
+    }
     .item {
       a {
         color: $main-color;
