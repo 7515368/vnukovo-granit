@@ -371,6 +371,9 @@
       @media screen and (max-width: 680px) {
         margin-bottom: 78px;
       }
+      img {
+        object-fit: cover;
+      }
       a {
         color: $main-color;
       }

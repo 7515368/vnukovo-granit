@@ -17,13 +17,11 @@
         justify-content: start;
       }
       li {
-      
         background: $grey;
-       
+
         @media screen and (max-width: 680px) {
           font-size: 10px;
           line-height: 15px;
-       
         }
         &:not(:last-child) {
           margin-right: 1px;
@@ -31,10 +29,9 @@
         &.active {
           background-color: $blue;
           a {
-           
             color: #ffffff;
             display: inline-block;
-         
+
             &:hover {
               color: #ffffff;
             }
@@ -140,21 +137,37 @@
     }
   }
 }
+
+.catalogue_list {
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 47px;
+  @media screen and (max-width: 680px) {
+    display: block;
+    width: 100%;
+    .item {
+      width: 75vw;
+      margin-bottom: 78px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
 .columns {
   display: flex;
   .catalogue_list {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 47px;
-    @media screen and (max-width: 680px) {
-      display: block;
-      width: 100%;
-      .item {
-        width: 75vw;
-        margin-bottom: 78px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
+    // @media screen and (max-width: 680px) {
+    //   display: block;
+    //   width: 100%;
+    //   .item {
+    //     width: 75vw;
+    //     margin-bottom: 78px;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //   }
+    // }
   }
 }
 .side_left {

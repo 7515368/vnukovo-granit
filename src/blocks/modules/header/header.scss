@@ -10,6 +10,9 @@
     }
   }
   &_logo {
+    width: calc(100% / 3);
+    margin-right: auto;
+    text-align: center;
     svg {
       width: 200px;
       height: 71px;
@@ -25,6 +28,8 @@
   &_contacts {
     display: flex;
     align-items: center;
+    width: calc(100% / 3);
+
     @media screen and (max-width: 680px) {
       margin-right: 20px;
       margin-left: auto;
