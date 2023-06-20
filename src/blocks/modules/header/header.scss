@@ -36,8 +36,10 @@
     }
   }
   &_btn {
-    padding-left: 52px;
-    padding-right: 49px;
+    // padding-left: 52px;
+    // padding-right: 49px;
+    padding-left: 35px;
+    padding-right: 32px;
     &:hover {
       background: $hover-blue;
       border-color: $hover-blue;
@@ -118,6 +120,114 @@
     }
     @media screen and (max-width: 680px) {
       display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 680px) {
+  :not(.main_page) .header.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+  }
+}
+
+.header.fixed {
+  .header_nav-menu {
+    display: none;
+  }
+  .header_nav {
+    border-bottom: none;
+  }
+  .burger-menu {
+    display: block;
+    transition: 0.3s;
+    &_button {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-20%);
+    }
+    &_lines::before,
+    &_lines::after,
+    &_lines {
+      background: #252734;
+    }
+
+    &:hover {
+      .burger-menu_lines::before,
+      .burger-menu_lines::after,
+      .burger-menu_lines {
+        background: $light-blue;
+      }
+    }
+    &_active {
+      .burger-menu_lines {
+        background-color: transparent !important;
+      }
+      &:hover {
+        .burger-menu_lines::before,
+        .burger-menu_lines::after {
+          background: $light-blue;
+        }
+      }
+    }
+
+    &_nav {
+      height: 75px;
+      top: 127px;
+      left: 0;
+      height: 0;
+      padding-top: 20px;
+
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        padding-top: 16px;
+        padding-bottom: 17px;
+        list-style: none;
+        max-width: calc($container - 40px);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 16px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid #252734;
+        .burger-menu_link {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .burger-menu_active {
+    .burger-menu_nav {
+      left: 0;
+      height: fit-content;
+    }
+  }
+  .header_contacts {
+    margin-left: 60px;
+  }
+}
+
+.main_page {
+  .header.fixed {
+    .header_nav-link a,
+    .btn,
+    .header_phone a {
+      color: #252734;
+    }
+    .header_nav {
+      color: #252734;
+      border-color: #252734;
+    }
+    .header_logo svg use,
+    .header_social svg use {
+      fill: #252734;
     }
   }
 }
